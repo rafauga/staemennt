@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.4)  13 JUL 2026 11:23
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.4)  13 JUL 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1150,18 +1150,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Kafli 11.
 [47
 
-] [48]
+]
+Underfull \vbox (badness 1688) has occurred while \output is active []
+
+[48]
 File: images/Stika_jafna.pdf Graphic file (type pdf)
 <use images/Stika_jafna.pdf>
 File: images/Almenn_stae_jofnur.pdf Graphic file (type pdf)
 <use images/Almenn_stae_jofnur.pdf>
 File: images/Thales-teikn.png Graphic file (type bmp)
 <images/Thales-teikn.png>
-[49] [50] [51] [52
-
-]
+[49] [50] [51] [52]
 Kafli 12.
-[53] [54
+[53
+
+] [54
 
 ]
 Kafli 13.

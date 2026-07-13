@@ -36,6 +36,8 @@ Hvaða aðgerðir þekkið þið sem má framkvæma á jöfnu þannig að hún h
 
 </details>
 
+<details class="hint">
+
 <summary>Vísbending 2</summary>
 
 Við vitum til dæmis að mengi lausna breytist ekki þó að við bætum (sömu) tölu við báðum megin jafnaðarmerkisins. Við megum líka víxla liðum í summum og við megum líka víxla á hliðum jöfnunnar, þ.e. $A=B$ er jafngilt $B=A$. Það er líka hægt að breyta táknunum, jöfnuhneppið $x+y=S$ og $x-y=M$ er jafngilt jöfnuhneppinu $a+b=c$ og $a-b=d$. En hér er aukaspurning: við vitum: ef $x=y$ þá er líka $x^2=y^2$. Samt er aðgerðin „að hefja báðar hliðar í annað veldi“ ekki samhverfa -- af hverju ekki?     
