@@ -1,0 +1,174 @@
+/* =========================================================
+   BOOKDOWN / GITBOOK CUSTOM STYLE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BODY TEXT
+   --------------------------------------------------------- */
+
+p {
+  margin-bottom: 0.7em;
+  line-height: 1.55;
+}
+
+
+/* ---------------------------------------------------------
+   INLINE CODE
+   --------------------------------------------------------- */
+
+p code {
+  white-space: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   CODE BLOCKS
+   --------------------------------------------------------- */
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+.sourceCode {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+/* ---------------------------------------------------------
+   FIGURES
+   --------------------------------------------------------- */
+
+/* Whole figure container */
+.figure {
+  text-align: center !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 1.8em !important;
+}
+
+/* Images inside figures */
+.figure img,
+img.framed {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  border: 1px solid #999 !important;
+  padding: 10px !important;
+
+  background: white !important;
+
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.08) !important;
+
+  box-sizing: border-box;
+}
+
+/* Captions */
+.figure p.caption,
+p.caption,
+figcaption {
+  text-align: center !important;
+
+  font-style: italic;
+  font-size: 0.95em;
+  color: #666;
+
+  margin-top: 0.6em !important;
+  margin-bottom: 0 !important;
+
+  line-height: 1.4;
+}
+
+
+/* ---------------------------------------------------------
+   TABLES
+   --------------------------------------------------------- */
+
+table {
+  border-collapse: collapse !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+table,
+th,
+td {
+  border: 1px solid black !important;
+}
+
+th,
+td {
+  padding: 6px;
+  vertical-align: top;
+}
+
+/* Optional class */
+.with-borders table {
+  border-collapse: collapse;
+}
+
+.with-borders th,
+.with-borders td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   DETAILS / HINT BOXES
+   --------------------------------------------------------- */
+
+details.hint {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  padding: 0.7em 0.9em;
+
+  border-left: 4px solid #999;
+
+  background: #f8f8f8;
+
+  border-radius: 4px;
+}
+
+details.hint summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+
+/* ---------------------------------------------------------
+   SMALL TYPOGRAPHIC IMPROVEMENTS
+   --------------------------------------------------------- */
+
+
+blockquote {
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+
+  background-color: #fafafa;
+
+  border-left: 4px solid #666;
+
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
+
+  color: black;
+
+  font-size: inherit !important;
+
+  line-height: 1.7;
+}

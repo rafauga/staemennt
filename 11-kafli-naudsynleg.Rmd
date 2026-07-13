@@ -1,0 +1,11 @@
+# Um nauðynleg sannindi og tilfallandi sannindi {#naudsyn_venjur}
+
+Sumt í stærðfræði er þannig vegna þess að það getur ekki verið öðruvísi. Annað er eins og það er vegna hefðar og samkomulags. 
+
+
+
+## Nauðsynlegt og hefðbundið (Hewitt){#abitrary-necessary}
+
+
+
+

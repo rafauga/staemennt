@@ -1,0 +1,40 @@
+---
+title: "Nótur um stærðfræðimenntun"
+author: "Ingólfur Gíslason"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: book.bib
+csl: ritid.csl
+lang: is-IS
+output:
+  bookdown::gitbook:
+    css: style.css
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rafauga/st_grunnskola
+---
+
+```{r setup, include=FALSE}
+source("R/figures.R")
+```
+
+# Um textann {#umtextann}
+
+Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám (frekar en kerfis- eða félagsfræðilega sýn). Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, *There Is No One Way to Teach Math* [@picciotto2025] til hliðsjónar því þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle. 
+
+Í textanum er áherslan á undirstöðuhugtök og hagnýtar leiðir í kennslu, auk rýni í stærðfræðilegt efni grunnskóla og stundum í efni framhaldsskóla. Gengið er út frá því að lesendur vinni bæði saman og með kennara, en áhugasamar manneskjur utan slíks samhengis gætu ef til vill nýtt sér textann líka.
+
+## Notkun bókar og tungumál {#notkun-tungumal}
+
+Ég ávarpa lesanda textans ýmist sem nemanda (hann), lesanda (hann), en stundum nota ég „þau“, „öll“, og önnur orð til að gefa til kynna að öll eru velkomin að lesa og læra af þessum texta, og persónur í verkefnatextum geta verið af ólíku kyni.
+
+Bókina má aðlaga og nýta að vild, að hluta eða í heild, með eftirfarandi skilyrðum:
+
+1.  Bókin sé ekki nýtt til að valda manneskjum skaða, græða peninga, eða til að stuðla að auknum ójöfnuði milli fólks.
+
+2.  Ef umtalsverðir hlutar eru nýttir í öðru verki sé upprunans hér getið.

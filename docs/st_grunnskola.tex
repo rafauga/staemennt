@@ -1,0 +1,1141 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  icelandic,
+]{book}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[]{biblatex}
+\addbibresource{book.bib}
+\usepackage{booktabs}
+\ExecuteBibliographyOptions{sorting=nyt,sortlocale=is-IS}
+\linespread{1.2}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Nótur um stærðfræðimenntun},
+  pdfauthor={Ingólfur Gíslason},
+  pdflang={is-IS},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Nótur um stærðfræðimenntun}
+\author{Ingólfur Gíslason}
+\date{2026-06-23}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter{Um textann}\label{umtextann}
+
+Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám (frekar en kerfis- eða félagsfræðilega sýn). Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, \emph{There Is No One Way to Teach Math} \autocite{picciotto2025} til hliðsjónar því þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle.
+
+Í textanum er áherslan á undirstöðuhugtök og hagnýtar leiðir í kennslu, auk rýni í stærðfræðilegt efni grunnskóla og stundum í efni framhaldsskóla. Gengið er út frá því að lesendur vinni bæði saman og með kennara, en áhugasamar manneskjur utan slíks samhengis gætu ef til vill nýtt sér textann líka.
+
+\section{Notkun bókar og tungumál}\label{notkun-tungumal}
+
+Ég ávarpa lesanda textans ýmist sem nemanda (hann), lesanda (hann), en stundum nota ég „þau``, „öll``, og önnur orð til að gefa til kynna að öll eru velkomin að lesa og læra af þessum texta, og persónur í verkefnatextum geta verið af ólíku kyni.
+
+Bókina má aðlaga og nýta að vild, að hluta eða í heild, með eftirfarandi skilyrðum:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Bókin sé ekki nýtt til að valda manneskjum skaða, græða peninga, eða til að stuðla að auknum ójöfnuði milli fólks.
+\item
+  Ef umtalsverðir hlutar eru nýttir í öðru verki sé upprunans hér getið.
+\end{enumerate}
+
+\chapter{Skilningur}\label{skilning}
+
+Hvað er skilningur? Hvað er skilningur í stærðfræði?
+
+\section{Venslaskilningur og tækniskilningur}\label{vensla-taekni}
+
+Við getum rifjað upp tvígreiningu Richard Skemps í venslaskilning og tækniskilning \autocite{skemp1976}. Í örstuttu máli drögum við þessi hugtök saman:
+
+\begin{itemize}
+\tightlist
+\item
+  Venslaskilningur er að vita hvernig hægt er að nota stærðfræðihugtök og -aðferðir og vita hvers vegna þær eru viðeigandi og hvers vegna þær skila réttum niðurstöðum.
+\item
+  Tækniskilningur er að vita hvernig á að reikna tiltekin dæmi án þess að vita hvers vegna þau eru reiknuð á þann hátt, hvort það sé vit í reikningunum, eða hvernig aðferðin tengist öðrum aðferðum eða hugtökum.
+\end{itemize}
+
+Í bók Picciotto og Pemantle er \emph{skilningur} nokkurn veginn það sama og Skemp kallar venslaskilning.
+
+\section{Skilningur í daglegu máli og í stærðfræði}\label{skiln-dag-stae}
+
+Til frekari dýptar getum við velt fyrir okkur hvað orðið skilningur eiginlega merkir. Í skáldsögu Fríðu Ísberg, \emph{Merking} \autocite{isberg2021} (annað mikilvægt hugtak!) segir:
+
+\begin{quote}
+Íslenska orðið „skilningur`` hefur ákveðna einangrunarmerkingu; við reynum að skilja eitt frá öðru - hið ljóta frá hinu fallega, manninn frá dýrinu - til að einangra það og eyða svo því sem við viljum ekki. En latneska orðið „comprehendere`` - sem enskan notar - er andstæða þess: það þýðir að taka saman. „Com-`` er svipað forskeyti og „sam-`` á íslensku og „prehendere`` þýðir að grípa, ná tökum á einhverju. (bls. 194)
+\end{quote}
+
+Fleiri rannsakendur hafa lagt áherslu á að skilningur felist í að aðskilja, greina sundur, og líka að taka saman, ná utan um, grípa um. Mjög fróðleg umfjöllun um skilning í íslensku og í sögulegu ljósi kennslubóka í stærðfræði er í grein Kristínar Bjarnadóttur, \emph{Er áhersla á skilning nýmæli?} \autocite{bjarnadottir2022}
+
+Til að skýra betur hvað það merkir að \emph{skilja hugtak} segja Picciotto og Pemantle að það að skilja hugtak ætti yfirleitt að þýða að nemandi geti:
+
+\begin{itemize}
+\tightlist
+\item
+  Útskýrt það með eigin orðum, útskýra \emph{hvers vegna} eitthvað er eins og það er. Kennarar ættu því að biðja nemendur reglulega að útskýra, bæði munnlega og skriflega (og það getur stundum átt við að teikna eða beita líkamstjáningu til stuðnings).
+\item
+  Að snúa ferlum við. Þú skilur ekki dreifireglu nema þú getir þáttað líka, þú skilur ekki jöfnur nema þú getir búið til (margar) jöfnur sem hafa lausnina \(4\), og getir búið til jöfnu út frá grafi. Það að geta snúið við ferlum (e. reversibility) er prófsteinn á skilning, leið til að dýpka skilning, og í sumum tilvikum önnur leið að skilningi.
+\item
+  Svegjanleg notkun margra leiða. Að skilja jöfnur: með prófun, með gröfum, með töflum, með tækni, auk bókstafareiknings.
+\item
+  Að geta \emph{tengt milli ólíkra framsetninga}, til dæmis tákna (algebrustæða), töflu (gildistöflu) og grafs (teikning í hnitakerfi).
+\item
+  Yfirfærsla á ný samhengi. Til dæmis að tengja hlutföll við einslaga myndir, og fjarlægð milli punkta við reglu Pýþagórasar.
+\item
+  Að vita hvenær það á ekki við. Dæmi: ekki eru öll sambönd línuleg. Þess vegna er mikilvægt að rannsaka gagndæmi, hvenær eitthvað á ekki við.
+\end{itemize}
+
+Við bætum við eftirfarandi (sem geta þó líklega átt við sem sértilfelli undir einhverjum af punktunum hér að ofan):
+
+\begin{itemize}
+\tightlist
+\item
+  Að geta gefið eigin dæmi sem falla undir hugtakið og dæmi sem falla \emph{ekki} undir hugtakið (og útskýrt hvers vegna dæmin eru þannig). Sjá meira um þetta í undirkafla \ref{breytileiki}, \emph{Breytileiki}.
+\item
+  Að útskýra hvernig það tengist öðrum hugtökum.
+\end{itemize}
+
+Einn stærsti vandinn við stærðfræðikennslu til skilnings er að það er ómögulegt að veita einhverjum skilning með því einu að útskýra.
+
+\subsection{Verkefni um dreifireglu}\label{verkefni-dreifiregla}
+
+Hugsum okkur spurninguna
+
+\begin{quote}
+Af hverju er \(2(x+3) = 2x + 6\)?
+\end{quote}
+
+Hvaða ályktanir um skilning nemanda getum dregið út frá eftirfarandi „svörum``, og hvernig gætum við brugðist við svörunum til að kanna skilninginn betur:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  „Það er út af dreifireglunni?{}``
+\item
+  „Til dæmis ef \(x=1\) þá þetta bara \(2(1+3)=2 \cdot 4\) og það er alveg eins hægt að skipta \(4\) niður og margfalda hvern hlut fyrir sig, \(2 \cdot 1 = 2\) og \(2 \cdot 3 = 6\) og leggja saman, \(2+6=8\).
+\item
+  „Ef ég skoða rétthyrning með eina hlið \(2\) og hina \(x+3\) og reikna flatarmálið, þá skiptir ekki máli hvort ég reikna hvern bút fyrir sig og legg saman eða allan í einu`` (með fylgir eftirfarandi teikning):
+\end{enumerate}
+
+\begin{figure}
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{st_grunnskola_files/figure-latex/reitir-1.pdf}}
+\caption{\label{fig:reitir}Rétthyrningur með reitum af breidd \(x\) og \(3\) og hæð \(2\).}
+\end{figure}
+
+\section{Breytileiki}\label{breytileiki}
+
+Stærðfræðihugtök og setningar (niðurstöður) fela oft í sér að benda á eitthvað sem breytist á meðan annað er óbreytt. John Mason notar hugtökin \emph{breytileikavíddir} (dimensions of possible variation) og \emph{breytileikamörk} (range of permissible change) til að lýsa breytileika \autocite{mason2005}. Hægt er að breyta tilteknum hlutum í einhverju verkefni þannig að það haldi áfram að vera dæmi um það sama, en það fer alltaf eftir því hvað við hugsum um sem „það sama`` í hverju tilfelli (og getur verið mismunandi eftir samhengi). Það getur verið gagnlegt að greina hverju er hægt að breyta (hverjar eru breytileikavíddirnar) og hvernig (hver eru breytileikamörkin) þannig að nákvæmlega sama aðferð virki áfram til að leysa verkefni. Við getum líka beitt þessum hugtökum á stærðfræðileg fyrirbæri út af fyrir sig. Til dæmis eru \(5+7=12\) og \(4+8=12\) og við getum velt fyrir okkur breytileikavíddum og breytileikamörkum. Hvað breytist og hvað er óbreytt í þessum jöfnum? Hverju má breyta til að fá fram fleiri „eins`` jöfnur? Hvernig?
+
+\section{Breytileikaverkefni 1}\label{verkefni_breytileiki_1}
+
+Segið um hverja röð hvað breytist og hvað breytist ekki. Undir hvaða hugtök falla öll dæmin (í sama lið)? Hér má nefna nokkur misjafnlega þröng hugtök. Bætið við fleiri dæmum um það sama. Það sem breytist endurspeglar breytileikavídd (hverju má breyta). Bætið svo við dæmum sem falla ekki undir þrengsta hugtakið, með öðrum orðum: búið til dæmi sem fer út fyrir eitthvað sem breytist ekki í þeim dæmum sem gefin eru. Ramminn endurspeglar breytileikamörk (hvernig má breyta).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\frac{1}{2}, \frac{2}{4}, \frac{3}{6}, \frac{4}{8}\)
+\item
+  \(x+y=1\), \(2x+2y=2\), \(4x+4y=4\)
+\item
+  \(x+y=1\), \(2x+2y=1\), \(3x+3y=1\)
+\item
+  \(x+y=1\), \(4x-2y=1\), \(8x-6y=1\)
+\item
+  \(f(x)=x^2\), \(f(x)=x^2+1\), \(f(x)=x^2+2\)
+\end{enumerate}
+
+\chapter{Talnaskyn, táknskyn, aðgerðaskyn}\label{skyn}
+
+Orðið skyn á hér að fela í sér bæði skilning og skynjun.
+
+\section{Talnaskyn (number sense)}\label{talnaskyn}
+
+Með talnaskyni er meðal annars átt við að hve miklu leyti við getum reiknað í huganum, tengt saman talnastaðreyndir sem við þekkjum og áttað okkur á stæðarsamanburði talna. Ef við höfum gott talnaskyn, höfum við „tengslahugsun`` um tölur og reikning, og notum okkur staðreyndir um tölur og talnasambönd til að leysa verkefni, og við áttum okkur á samanburði talna (líka brota) út frá eiginleikum (en þurfum ekki endilega að „reikna þær út``, sjáum til dæmis að \(\frac{9}{14}\) er örugglega stærri tala en \(\frac{1}{2}\), vegna þess að \(9>7\)).
+
+Í rannsóknum á stærðfræðikennslu byggða á skilningi barna (cognitively guided instruction) kemur í ljós \autocite{kristinsdottir2021}:
+
+\begin{quote}
+að börn sem fá tækifæri til að leysa þrautir með eigin aðferðum þróa með sér lausnaleiðir sem ákvarðast af fyrri reynslu þeirra og þroskastigi. Þetta ferli er líkt hjá öllum börnum og skiptist í þrjú meginstig:
+\end{quote}
+
+\begin{quote}
+Stig 1 --- hlutbundið líkan sem fylgir söguþræði
+\end{quote}
+
+\begin{quote}
+Stig 2 --- talning
+\end{quote}
+
+\begin{quote}
+Stig 3 --- tengslahugsun og nýting talnastaðreynda
+\end{quote}
+
+Hlutbundið líkan geta verið hlutir, fingur eða skýringarmyndir. Á stigi 2 er líkanið í huganum -- börnin þurfa ekki lengur að hafa hlutbundna framsetningu á tölu. Það þýðir þó ekki að þau noti ekki til dæmis fingur eða skýringamyndir. Á stigi 3 getum við unnið með tölur á sveigjanlegan hátt og nýtt staðreyndir um tölur og talnasambönd.
+
+\subsection{Dæmi}\label{daemi-talnaskyn}
+
+\begin{itemize}
+\tightlist
+\item
+  Ef við reiknum \(13-9\) með því að hugsa \(13 = 10 + 3\) og notum okkur að \(10-9=1\) til að sjá að \(13-9 = 10 - 9 + 3 = 1 + 3 = 4\).
+\item
+  Ef við reiknum \(4 \cdot 13 = 2 \cdot 2 \cdot 13 = 2 \cdot 26 = 52\)
+\end{itemize}
+
+\section{Táknskyn (symbol sense)}\label{taknskyn}
+
+Með táknskyni er meðal annars átt við:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Að geta valið hvort gagnlegt sé að nota tákn (eins og bókstafi fyrir breytur og óþekktar tölur) við lausn verkefnis eða ekki
+\item
+  Að geta túlkað tákn sem notuð eru til að lýsa reikningum eða aðstæðum
+\item
+  Fimi í bókstafareikningi (að umbreyta táknarunum í aðrar jafngildar táknarunur)
+\item
+  Val á réttum táknum fyrir tilteknar aðstæður
+\end{enumerate}
+
+Nemendur þurfa að átta sig á því að bókstafir fyrir breytur gegna ólíkum hlutverkum en hafa þó tiltekna eiginleika. Til dæmis: Breytur
+
+\begin{itemize}
+\tightlist
+\item
+  geta táknað tölur sem vantar (og hægt er að finna út hver er)
+\item
+  fylgja öllum reiknireglum sem gilda um tölur
+\item
+  eru stundum tengdar öðrum breytum
+\item
+  hafa stundum eitt tiltekið gildi, en stundum geta þær haft hvaða gildi sem er
+\end{itemize}
+
+\subsection{Verkefni um táknskyn}\label{verkefni-taknskyn}
+
+Eftirfarandi spurningar reyna á táknskyn með ólíkum hætti. Í hverri línu er fullyrðing sem segja á hvort sé stundum, alltaf eða aldrei sönn. Við höfum áhuga á skilningi svo hér þarf að útskýra \emph{hvers vegna} í sérhverjum lið. Við viljum líka benda á undir hvaða flokk táknskyns hér að ofan hvert dæmi reynir helst á.
+
+\textbf{Alltaf, stundum eða aldrei satt:}
+
+\begin{itemize}
+\tightlist
+\item
+  \(x+2 < 2x\)
+\item
+  \(-x\) er neikvæð tala
+\item
+  Það skiptir máli hvort við skrifum \(4a+10\) eða \(4b+10\)
+\item
+  Ef \(a\) og \(b\) eru breytur, þá er ómögulegt að \(a=b\)
+\item
+  \((x+5)^2 = x^2 + 5^2\)
+\item
+  \(-(y-1) = -y -1\)
+\item
+  \(-a^2 = (-a)^2\)
+\item
+  Ef þú margfaldar þrjár tölur sem standa saman í talnaröðinni (eins og \(13\), \(14\) og \(15\)) verður útkoman alltaf margfeldi af \(6\) (með öðrum orðum: \(6\) gengur upp í henni).
+\item
+  Ef \(3\) gengur upp í þversummu tölu þá gengur \(3\) gengur upp í tölunni.
+\end{itemize}
+
+Táknskyn er ekki eitthvað sem kemur fljótt eða sjálfkrafa. Það þarf að kenna nemendum að vinna með tákn.
+
+\section{Aðgerðaskyn (operation sense)}\label{adgerda-skyn}
+
+Sameiginlegt með talnaskyni og táknskyni er aðgerðaskyn. Þá er átt við að skilja reikniaðgerðir, ólíka eiginleika þeirra og tengsl þeirra á milli, auk þess að hafa vit á því að nota þær við viðeigandi aðstæður og verkefnum.
+
+\subsection{Dæmi}\label{daemi-adgerdaskyn}
+
+Skoðum rununa \(5, 8, 11, 14, 17...\) Hvað er í gangi hér?
+
+\begin{itemize}
+\tightlist
+\item
+  Endurtekin samlagning, \(5, 5+3, 5+3+3, ...\) sem hægt er að tjá með margföldun
+\item
+  Táknað með \(5 + 3n\) og tengist framsetningu á línu \(y = 3x+5\)
+\end{itemize}
+
+Við viljum meðal annars að nemendur skilji að endurtekna samlagningu má reikna með margföldun, og átti sig á og geti notað dreifiregluna \(a(b+c)=ab+ac\) í sinni talnahugsun og hugarreikningi.
+
+\subsection{Verkefni: Víxlregla}\label{verkefni-vixlregla}
+
+Víxlregla um samlagningu segir að jafnan \(a+b = b+a\) sé alltaf sönn.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Gildir víxlregla um frádrátt? Er hægt að segja eitthvað um tölurnar \(a\) og \(b\) ef \(a-b = b-a\)?
+\item
+  Er einhver regla á því hvað gerist ef liðum er víxlað í frádrætti? Hvað gerist?
+\item
+  Gildir víxlregla um margföldun?
+\item
+  Gildir víxlregla um deilingu?
+\end{enumerate}
+
+\subsection{Verkefni: Börn leysa verkefni um margföldun}\label{verkefni-myndband-talnaskyn}
+
+Skoðið greinina \href{https://skolathraedir.is/2021/04/21/eg-leysi-stundum-vandamalid-med-svona-hringjum-hugsun-barna-um-margfoldun/}{„Ég leysi stundum vandamálið með svona hringjum`` - Hugsun barna um margföldun}. Beinum athygli okkar að talnaskyni barnanna.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Horfið á Óðin leysa verkefnið „Sólveig keypti 4 poka af gulrótum. Í hverjum poka voru 6 gulrætur. Hvað keypti Sólveig margar gulrætur samtals?{}`` \href{https://youtu.be/rqlU-PLoxOs?si=U6lG57jxB6EKkLsn}{Youtube-hlekkur}. Gerið grein fyrir talnaskyni og aðgerðaskyni í lausn Óðins. Til dæmis: Hvaða talnasambönd þekkir hann og hvaða eiginleika margföldunar og samlagningar nýtir hann sér?
+\item
+  Horfið á Torfa leysa sama verkefni. \href{https://youtu.be/OEZPAQegt9o?si=7VloBBZ5PemM2v_u}{Youtube-hlekkur}. Hvaða hæfni nýtir hann sér og hvað bendir til þess að talnaskyn hans sé á þessum punkti þróaðra heldur en hjá Óðni? (Hafið vel í huga að við erum ekki að bera saman nemendurna sjálfa heldur einungis hvað kemur fram í þessum tilteknu lausnum.)
+\end{enumerate}
+
+\subsection{Verkefni: Að túlka margföldun og deilingu}\label{verkefni-tulka-margf-deiling}
+
+Fyllið fyrst inn í eftirfarandi töflu. Það er búið að gera fyrstu röðina. Skýringamyndir eiga að sýna inntak verkefnisins. Útreikningur á að sýna eina margföldun eða deilingu.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Dæmi}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Teiknaðu skýringamynd og segðu hvernig þú reiknar}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Útreikningur}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Svar}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{1.} Ég kaupi fjórar samstæður (fernur) af þremur jógúrtdollum. Hve margar dollur af jógúrt kaupi ég alls? & Ég reikna þrjá hópa af fjórum. & 3 × 4eða4 × 3 & \textbf{12} \\
+\textbf{2.} Tveimur pítsum er jafnt skipt á milli fimm manns. Hversu mikið fær hver einstaklingur? & & & \\
+\textbf{3.} Max sker köku í þrjá jafna hluta. Hann borðar hálfan hluta. Hve stóran hluta (brot) af kökunni borðar hann? & & & \\
+\textbf{4.} Búðu til þetta dæmi sjálfur! & & 3 ÷ 1/2 & \\
+\textbf{5.} Búðu til þetta dæmi sjálfur! & & 1/2 ÷ 1/4 & \\
+\end{longtable}
+
+Eftirfarandi er listi af algengum vandræðum. Verkefni ykkar er að útskýra í hverju vandræðin felast, og stinga upp á spurningum eða vísbendingum fyrir nemanda sem lendir í vandanum.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Nemandinn reiknar \(5 \div 2\) í spurningu 2.
+\item
+  Nemandinn gefur svarið \(1 \frac{1}{2}\) í spurningu 4.
+\item
+  Nemandinn gefur svarið \(\frac{1}{8}\) í spurningu 4.
+\item
+  Nemandinn reiknar \(\frac{1}{3} \div \frac{1}{2}\) í spurningu 3.
+\item
+  Nemandinn skrifar \(1 \div 3 \div 2\) í spurningu 3.
+\item
+  Nemandinn á erfitt með að gera skýringamynd.
+\item
+  Nemandinn klárar verkefnið og þarf útvíkkun og áskorun.
+\end{enumerate}
+
+\subsection{Verkefni: Jafngild brot}\label{verkefni-jafngild}
+
+Hvaða heilu tölur má setja inn fyrir bókstafina \(x\) og \(y\) þannig að brotin verði jafngild?
+
+\[
+ \dfrac{x}{30} = \dfrac{2}{y} 
+\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Hve mörg jafngild brot er hægt að finna?
+\item
+  Breytið tölunum 2 og 30. Hvaða áhrif hefur það á fjölda jafngildra brota sem hægt er að finna?
+\item
+  Finnið tvær tölur sem gefa meira en 20 jafngild brot.
+\item
+  Almenna verkefnið: hvernig getum við sagt, út frá tölunum (sem voru upphaflega 2 og 30) hve mörg jafngild brot við fáum?
+\end{enumerate}
+
+\subsection{Verkefni: Hraði á hjóli}\label{verkefni-hradi-hjol}
+
+Þú þarft að hjóla upp hæð, 12 km langan vegarkafla og líka niður hinu megin, sem er líka 12 km langur kafli. Segjum að þú getir hjólað upp hæðina á hraðanum 6 km/klst.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Ef þú hjólar niður á hraðanum 20 km/klst, hve lengi ertu að hjóla alla leiðina?
+\item
+  Hve hratt þarftu að hjóla niður hinu megin til þess að meðalhraði þinn verði 12 km/klst alla leiðina?
+\item
+  Ef þú hjólar upp á hraðanum \(x\) km/klst og niður á hraðanum \(y\) km/klst, hve lengi ertu þá á leiðinni og hver er meðalhraði þinn?
+\end{enumerate}
+
+\chapter{Kennslunálganir og stærðfræðistríð}\label{nalgangir-strid}
+
+Fólk er oft mjög ósammála um það hvernig stærðfræðikennsla á að fara fram.
+
+\section{Togstreitur}\label{togstreitur}
+
+Það sem stundum er kallað \emph{hefðbundin stærðfræðikennsla} einkennist af því að kennarinn sýnir nemendum hvernig hægt er að leysa tilteknar gerðir af verkefnum (eða „hvernig á`` að leysa þær) og nemendur æfa sig svo á samsvarandi dæmum hver fyrir sig. Í slíku fyrirkomulagi er hætt við því að áherslan verði of mikil á aðferðir án skilnings (þ.e. nemendur öðlast eingöngu tækniskilning). Markmiðið með stærðfræðikennslu er hins vegar skilningur (þ.e. venslaskilningur). Góðir stærðfræðikennarar sem vinna innan þessa ramma, eða nýta sér hann ásamt öðrum aðferðum, útskýra hlutina vel og þar er möguleiki á því að nemendur bæti við venslaskilning sinn. Góðar útskýringar geta hins vegar blekkt nemendur til að halda að þeir skilji eitthvað sem þeir gera í raun og veru ekki og það að reyna einfaldlega að muna útskýringarnar virkar ekki vel fyrir flesta. Það þarf meira til, einhverja vitsmunalega vinnu, að brjóta heilann, að hugsa á einbeittan hátt.
+
+Þess vegna leggur stærðfræðimenntafræði til að kennslan felist meira í því að nemendur sjálfir reyni að leysa verkefni án þess að reyna að herma eftir því sem kennarinn hefur gert. Þá er hugmyndin að nemendur sjálfir geti uppgötvað stærðfræðileg sannindi og hugtök. Slíkt fyrirkomulag krefst þó vandaðs undirbúnings, vals á verkefnum og skipulags um verkefnavinnuna. Ef það er ekki gert er hætt við að nemendur læri hvorki aðferðir né nái skilningi. Venslaskilningur kemur ekki fram sjálfkrafa þó að nemendur fáist við verðug verkefni. Uppgötvanir þarf að festa í sessi með umræðu og ítrekun. Það þarf að leiða í ljós með nemendum hvað sé mikilvægt, hvað sé þess virði að festa í minni, hvernig uppgötvunin tengist öðru efni og hvernig það bregður nýju ljósi á fyrri þekkingu, auk þess sem nemendur þurfa æfingu í að beita því sem þau uppgötvuðu, eða því sem leitt var í ljós með samtali eftir heilabrotin.
+
+Undirliggjandi í allri umræðu um stærðfræðikennslu er togstreita milli þess hve mikið kennarinn á að sýna nemendum beint (bein kennsla, kynningar, fyrirlestrar) og hve mikið nemendur geta byggt upp stærðfræðina sjálf. Hægt er að lesa um það með því að fletta upp „math wars`` á netinu. Ein af þeim röksemdum sem „hefðarsinnar`` beita er að segja að nemendur þurfi að hafa vald á grunnfærni áður en þeir geta byggt upp hugtakaskilning. Þetta er ekki rétt, en rétta myndin er ekki heldur að það sé hægt að hafa góðan hugtakaskilning án færni. Hvoru tveggja þarf til og oftast þarf að fara ítrekað á milli: bæði að reikna og að hugsa um merkingu og rökin á bakvið.
+
+Hve mikið á að hjálpa nemendum með stærðfræðiverkefni? Það er freistandi fyrir kennara að einfaldlega sýna nemendum hvernig hægt er að leysa verkefnið. Það er líka algengt að nemendur sæki það mjög stíft. En þá er hætt við að nemendur hætti að hugsa og brjóta heilann, og læri því lítið af verkefninu. Listin er að svara þannig að við stöðvum ekki hugsun nemenda heldur hjálpum þeim að hugsa áfram. Oft er hægt að svara með spurningu á móti en einstaka sinnum er hægt að gefa vísbendingu án þess að gefa svarið eða stela allri hugsuninni. Góð vísbending beinir athygli nemandans að lykileiginleikum þess stærðfræðilega viðfangs, þeirra hugtaka eða þeirrar framsetningar sem hann er að reyna að átta sig á. Einnig getur verið nauðsynlegt að rifja upp með nemandanum merkingu einhverra orða eða tákna. Komið verður mun meira inn á þessi atriði síðar.
+
+Önnur skyld togstreita er milli umhyggju fyrir nemendum og umhyggju fyrir greininni, eða „commitment to students`` á móti „commitment to the discipline`` eins og Picciotto og Pemantle kalla það. Samkvæmt þeim felst góð kennsla \textbf{alls ekki} í því að finna milliveg heldur \textbf{verður að gera hvoru tveggja}. Hvert tiltekið námsefni eða efnisatriði þarf sína sérstöku nálgun og „dans`` milli glímu (hugsunar, vitsmunalegrar vinnu) og skýringa og umræðu. Þetta fer fram og til baka.
+
+Oft er of mikið gert úr því að stærðfræði byggi alltaf á því sem undan er komið eins og í beinni keðju þar sem engan hlekk má vanta. Vissulega \emph{er} stærðfræði meira í þessa veru en margar aðrar greinar en þetta er samt of einfölduð mynd. Það er oft hægt að skilja stærðfræðileg efni þó að eitthvað vanti upp á þekkingu á einhverju sem „ætti að koma á undan``.
+\#\#\# Dæmi \{\#daemi-margf-tafla\}
+
+Margföldunartaflan er sígilt dæmi um efnisatriði sem fólk deilir um. Annars vegar telja sumir rétt að leggja mikla áherslu á að nemendur æfi sig og læri \(10 \times  10\)-töfluna utanbókar og geti fundið hvert margfeldi í henni hratt og örugglega. Hins vegar segja aðrir að það sé mikilvægara að þróa talna- og aðgerðaskyn sitt þannig að maður skilji eiginleika margföldunar vel, og geti nýtt sér það til að finna margfeldin örugglega en ef til vill ekki alveg sjálfvirkt. Fólk í þeim hópi myndi yfirleitt frekar vilja tala um að „festa í minni`` margföldunartöfluna, sem getur gerst með því að vinna með margföldun á marga vegu, heldur en að læra hana utanbókar. Það er vissulega mikilvægt að hafa hraðan og öruggan aðgang í huganum að margföldunarstaðreyndum innan \(10  \times 10\)-töflunnar. Ef þú hefur hana ekki á þokkalegu valdi þínu verður erfitt að fylgjast með og halda áfram stærðfræðinámi vegna þess að til að skilja þáttun þarftu að þekkja þáttun einhverra talna (segjum talna \(<100\)). Ef þú sérð töluna \(24\) og veist ekki (nánast sjálfvirkt) að \(24 = 2 \cdot 12 = 3 \cdot 8 = 4 \cdot 6\) þá mun of mikil orka fara í að finna þetta út. Þetta þýðir ekki að besta leiðin til þess að festa margföldunartöfluna í minni sé að þylja hana utanbókar. Og það eru margar gagnlegar margföldunarstaðreyndir sem fólk öðlast ekki endilega vitund um þó að það kunni að þylja margföldunartöfluna, til dæmis:
+
+\begin{itemize}
+\tightlist
+\item
+  \(0 \cdot a = 0\)
+\item
+  \(1 \cdot a = a\)
+\item
+  \(ab = ba\)
+\item
+  \(a(bc)=a(bc)\)
+\item
+  \(2a\) endar á sléttri tölu
+\item
+  \(5a\) endar á \(5\) eða \(0\),
+\item
+  \(ab = 2a \cdot \frac{1}{2}b\),
+\item
+  \(a(b+c) = ab + bc\).
+\end{itemize}
+
+Þriðja togstreitan sem vert er að nefna hér er á milli þess að hreyfa kennsluna áfram með nýju efni og þess að rifja upp og skoða aftur eldra efni. Það þarf hvoru tveggja: hreyfingu áfram og nýtt efni en líka endurlit, upprifjun og að skoða aftur eldra efni í nýju ljósi (í ljósi nýrrar þekkingar).
+
+\section{Hvað virkar ekki}\label{virkar-ekki}
+
+Það er hægt að útfæra stærðfræðikennslu með ólíkum hætti. Ef rökrænt samhengi greinarinnar verður nemendum ljóst, með meiri áherslu á hugtök en aðferðir og þeir takast á við krefjandi verkefni um alhæfingar og röksemdir þá skiptir minna máli hvernig kennsluaðferðir eru notaðar.
+
+Hér eru nokkrar leiðir sem gefast yfirleitt ekki vel:
+
+\begin{itemize}
+\tightlist
+\item
+  Ofuráhersla á \emph{form} - tiltekin orð og rithátt.
+\item
+  Að samþykkja ekki svör sem ekki hafa verið einfölduð eða sett á „rétt form``.
+\item
+  Að læra utanbókar án skilnings.
+\item
+  Ég útskýri og svo æfið þið ykkur á dæmum.
+\item
+  Opnið bókina, skoðið skýringar og sýnidæmi og hermið eftir þeim.
+\item
+  Hér er nýtt verkefni (sem ekki hefur verið útskýrt) og nú finnið þið út úr því án samræðu eða nokkurs inngrips kennara.
+\end{itemize}
+
+Þó geta verið tilteknar aðstæður þar sem þessir hlutir koma að gagni.
+
+\section{Að festa í sessi (e. institutionalization)}\label{festa-sessi}
+
+Fæst fólk getur bæði tekið glósur og hugsað (um stærðfræði) samtímis. Megnið af tíma kennslustundar ætti að fara í það að nemendur leysi verkefni.
+
+Eftir að nemendur hafa glímt við verkefni er mikilvægt að taka saman lærdóminn, \textbf{að festa í sessi} það sem nemendur eiga að taka með sér úr tímanum og tengja við stærðfræði sem fræðigrein, tungumál stærðfræðinnar, hefðbundin tákn og orð yfir hlutina og leiðir til þess að sannreyna og staðfesta niðurstöður.
+
+Þá getur kennarinn líka \emph{sagt nemendum} hvað þau eiga að skrifa (glósa).
+
+Í lokasamantektinni þarf kennari að
+
+\begin{itemize}
+\tightlist
+\item
+  Draga fram lykilhugtökin skýrt og greinilega.
+\item
+  Skýra hvað sé mikilvægast og þess virði að muna og skrifa.
+\item
+  Að hjálpa nemendum að tengja nýja efnið við fyrra efni og annað efni.
+\item
+  Að sýna hefðbundna táknun og orð.
+\end{itemize}
+
+Þessi samantekt er samræða kennarans við allan bekkinn en hún \emph{byggir á vinnu nemenda}. Þess vegna er ekki hægt að útfæra þessa samantekt í tilbúnum fyrirlestri. Nokkrar rannsóknir benda til þess að stærðfræðikennarar á Íslandi mættu huga betur að samantektum af þessu tagi \autocite{oskarsdottir2014} \autocite{savola2008} þar sem kennarinn talar við allan bekkinn saman.
+
+\chapter{Þrautalausnir og verkefni}\label{thrautir-verkefni}
+
+Sígilt sannleikskorn um stærðfræðinám er það að til þess að læra stærðfræði verði fólk að \textbf{brjóta heilann}. Stærðfræðinám gengur ekki fyrst og fremst út á að læra að fylgja reikniaðferðum heldur að geta fengist við verkefni sem er ekki augljóst fyrirfram hvernig hægt er að leysa.
+
+Í enskum textum er oft talað um \textbf{problem solving} í þessu samhengi en þá er átt við að nemendur takist á við verkefni sem er ekki hægt að leysa með því að einfaldlega beita þekktri aðferð eða herma eftir sýnidæmi. Problem solving hefur stundum verið þýtt sem \textbf{þrautalausnir} en það orð hefur ef til vill of miklar tengingar við tiltekin einkenni verkefna, eins og að það þurfi mikla hugkvæmni til að leysa það, eða að það sé mjög erfitt. Þess vegna tölum við stundum frekar um \textbf{verðug verkefni} (sem er svo þýðing á enska orðinu rich task). Þá er hugmyndin að þó að verkefnið sé krefjandi sé það líka aðgengilegt (með lágan þröskuld) og að hugkvæmnin sem þarf sé ekki óraunhæf. Best er ef verkefnið feli bæði í sér eitthvað sem allir ráða við en að það leiði einnig til mjög krefjandi spurninga sem reyni á hugkvæmni þeirra sem lengst eru komnir.
+
+Í íslenskri \href{https://www.adalnamskra.is/grunnskoli/kafli-25-staerdfraedi-2024}{Aðalnámskrá fyrir grunnskóla} segir til dæmis í almennum kafla um stærðfræði:
+
+\begin{quote}
+Nemendur þurfa að fá tækifæri til að leita lausna, rannsaka, setja viðfangsefni fram á fjölbreyttan hátt, beita skapandi hugsun, ígrundun og röksemdum og að tjá sig um viðfangsefni sín með orðaforða stærðfræðinnar og grundvallarhugtökum hennar.
+\end{quote}
+
+Auk þess eru skilgreind hæfniviðmið um Þrautalausnir undir viðmiðum fyrir \textbf{Vinnulag stærðfræðinnar} þar sem segir meðal annars að við lok 10. bekkjar geti nemandi:
+
+\begin{quote}
+nýtt fjölbreyttar reikniaðgerðir og stærðfræðilegt samhengi til að leysa þrautir og rökstutt svör sín.
+\end{quote}
+
+Þennan texta má gagnrýna því það er óljóst hvað fjölbreyttar reikniaðgerðir eru og líka hvað það er að nota reikniaðgerðir til að rökstyðja svör. Líklega er átt við að nemendur geti leyst þrautir og rökstutt svörin og í námskrám annarra ríkja eru yfirleitt sambærileg markmið en betur orðuð. Í námskrá fyrir England segir til dæmis að markmiðið sé að „all pupils``
+
+\begin{quote}
+can solve problems by applying their mathematics to a variety of routine and non-routine problems with increasing sophistication, including breaking down problems into a series of simpler steps and persevering in seeking solutions \href{https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study}{National curriculum in England: mathematics programmes of study}.
+\end{quote}
+
+Í bandaríska \href{https://www.thecorestandards.org/Math/Practice/}{Common Core staðlinum} segir meðal annars að nemendur eigi að ``make sense of problems and persevere in solving them'' og í Singapúr eru þrautalausnir einskonar miðja og meginmarkmið allrar námskrárinnar: „The central focus of the mathematics curriculum is the development of mathematical problem-solving competency``, svo einhver dæmi séu nefnd.
+
+Þrátt fyrir að bæði stærðfræðimenntun sem fræðasvið og opinberar námskrár mælist til mikillar áherslu á að nemendur fáist við að leysa verðug verkefni er raunveruleikinn víða um heim (og meðal annars á Íslandi) sá að nemendur eyða mestum af sínum tíma í að reikna dæmi samkvæmt forskrift, herma eftir sýnidæmum, eða fylgjast með eða hlusta á kennara útskýra eitthvað. Og þá er ótalinn sá tími sem fer í hluti sem koma stærðfræðináminu ekki við.
+
+Kennarar geta gert margskonar hluti til að auka vægi vinnu með verðugum verkefnum. Sumar kennsluaðferðir eru sérstaklega hannaðar til þess og fela í sér róttækar breytingar frá hefðbundnum kennsluháttum. Ein þeirra, sem hefur náð nokkurri útbreiðslu er \textbf{Hugsandi kennslustofa} þar sem nemendum er skipt, sýnilega, í slembna hópa sem vinna saman að lausn verkefna á lóðréttum útstrokanlegum fleti (eins og tússtöflu). Lykilatriði í þeirri kennsluaðferð er að kennari kynni verkefnið fyrst munnlega með nemendum og hugi vel að því að taka saman lausnir og lærdóm af verkefnavinnunni ásamt því að gefa nemendum tíma til að kanna eigin skilning með einstaklingsverkefnum á eftir þessari vinnu. Um þessa aðferð má lesa í stuttri grein, \href{https://skolathraedir.is/2019/11/15/hvatt-til-hugsunar-i-staerdfraedi/}{Hvatt til hugsunar í stærðfræði} og kynna sér svo betur með lestri bókarinnar \href{https://haskolautgafan.is/en/products/hugsandi-skolastofa-i-staerdfraedi-bok-fyrir-kennara-a-ollum-skolastigum}{Hugsandi skólastofa í stærðfræði -- Bók fyrir kennara á öllum skólastigum}.
+
+\section{Eignarhald og tileinkun}\label{eignarhald}
+
+Við segjum að nemandi hafi \textbf{tileinkað} sér efni eða \textbf{gert það að sínu} ef það hefur \textbf{merkingu} fyrir honum. Í því felst að nemandinn skilur ný hugtök í gegnum þau sem hann hafði áður gert að sínum, og að hann sjái að hann hefur, eða hefði getað, uppgötvað þau sjálfur. Hann skilur þau svo vel að hann getur endurbyggt þau þó að hann gleymi þeim. Efnið er orðið eign hans og samofið honum, eins og nemandinn sjálfur sé höfundur efnisins. Á ensku er talað um \textbf{ownership} sem þýðir beinlínis \textbf{eignarhald}. Það er segin saga að hugmyndir sem maður er höfundur að sjálfur eru fastari í sessi heldur en þær sem maður þiggur frá öðrum. Þess vegna stefnum við að því að nemendur upplifi sjálfa sig sem höfunda stærðfræðinnar sjálfrar eins mikið og mögulegt er.
+
+Við viljum að nemendur séu áræðnir og hafi frumkvæði í námi sínu. Við viljum að þeir leggi til (frá eigin brjósti) í meira mæli en að þeir taki við frá kennara. Picciotto og Pemantle skrifa um \textbf{initiative} sem þýðir frumkvæði. Nemandi þarf til dæmis að leggja í að reyna við verkefni þó að þeir viti ekki alveg hvernig það muni leysast. Þeir bíða ekki eftir því að kennarinn segi þeim nákvæmlega hvað á að gera. Stærðfræðimenntafræðingurinn John Mason notar hugtakaparið \textbf{að taka við} (assenting) og \textbf{að leggja til} (asserting) til að vekja okkur til vitunar um þessar tvær ólíku afstöður. Hann bendir á það að leggja til felur í sér hugrekki til að taka áhættu með því að orða hugsun sína við aðra og að vera tilbúin að læra af mistökum, að búa til og prófa eigin tilgátur og að reyna að hugsa hugmyndir og aðferðir sjálf frá grunni.
+
+Þegar kennslan gengur út á að nemendur fáist við verðug verkefni þjálfast þeir í því að leggja til í stað þess að taka við.
+
+\section{Að kenna með og til þrautalausna}\label{auxf0-kenna-meuxf0-og-til-uxferautalausna}
+
+Eins og áður er getið hér í kaflanum er nauðsynlegt að brjóta heilann til að læra stærðfræði. Þannig kennum við stærðfræði \textbf{með} því að glíma við verðug verkefni. Sum vilja ganga lengra og kenna nemendum að verða betri í því að leysa þrautir, að kenna \textbf{til} þrautalausna.
+
+\chapter{Nokkrar túlkanir á brotum og sambreytni}\label{brot-hlutfoll}
+
+Við notum brot og ræðar tölur til þess að skilja og leysa ýmiskonar verkefni. Stundum eru þessi fyrirbæri útskýrð með framsetningum eins og sneiðum af hring (pítsusneiðar), á talnalínu, sem jöfn skipting, endurtekinn frádráttur, og margt fleira. Vandinn er að engin ein „áþreifanleg`` framsetning gefur eðlilega merkingu fyrir allar hliðar hugtaksins. Til dæmis: ef brot táknar hluta af pítsu, hvernig útskýrum við margföldun tveggja brota (án þess að skipta um túlkun á því hvað brot er)?
+Hér eru tekin saman nokkur sjónarhorn eða túlkanir á brotum:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \textbf{Hluti-heild} (part-whole): Hugtakið hluti-heild á við um aðstæður þegar einhverri heild er skipt í jafnstóra hluta. Þannig táknar brotið samanburð milli fjölda hluta og heildarfjölda hluta sem stærðinni var skipt í. Í þessu tilfelli verður teljarinn alltaf minni tala en nefnarinn. Til dæmis gætum við skipt köku (heildinni) í fjóra jafna hluta, og táknum þrjá af þessum hlutum í samanburði við heildina með brotinu \(\frac{3}{4}\).
+\item
+  \textbf{Mæling} (measure): Sem mæling táknar brot mælingu út frá einhverju bili sem táknar einingu. Nánar tiltekið þá er einhver tiltekin lengd ákvörðuð sem eining, og við skilgreinum einingarbrotið \(\frac{1}{a}\) með því að skipta bilinu frá tilteknum upphafspunkti í \(a\) jafna búta. Þá táknar til dæmis \(\frac{3}{4}\) lengdina sem fæst með því að leggja saman þrjú bil af lengdinni \(\frac{1}{4}\) frá upphafspunkti. Lengdin er sú sama og fæst með því að skoða endapunkt samanlagða bilsins á talnalínunni ef farið var í jákvæða átt.
+\item
+  \textbf{Virki/aðgerð} (operator): Við notum brotið til þess að umbreyta annarri stærð. Við margföldum með brotinu, og þannig getum við stríkkað („teygt á`` eða „dregið saman``) samfellda stærð eða „fjölfaldað`` (eða „dregið úr fjölda``) strjálar stærðir. Þetta er til dæmis hugmyndin þegar við reiknum „þrjá fjórðu af heildinni`` með því að margfalda heildina með þremur fjórðu. Til dæmis \(\frac{3}{4} \cdot 20\) til að finna þrjá fjórðu af 20. Til að nýta sér þessa túlkun þurfum við að geta litið á \(\frac{3}{4}\) sem bæði þrisvar sinnum \(\frac{1}{4}\) af heildinni og sem \(\frac{1}{4}\) af þrefaldri heildinni.
+\item
+  \textbf{Kvóti} (quotient): Við túlkum ræða tölu sem kvóta þegar við hugsum um hana sem útkomu úr deilingu. Þá er \(\frac{3}{4}\) talan sem fæst þegar við deilum 3 með 4 og er sá hluti sem einn einstaklingur fær ef 3 hlutum er skipt jafnt milli 4 einstaklinga. Eitt sem er ólíkt hluta-heild túlkuninni er að hér getur teljarinn verið stærri tala en nefnarinn og við getum notað neikvæðar tölur og einnig að við getum hugsað okkur að teljari og nefnari tákni ólíka hluti.
+\item
+  \textbf{Stærðarhlutfall} (ratio): Hér er átt við það að bera saman tvær stærðir, þannig að brotið stendur fyrir samband milli stærða. Til dæmis þegar appelsínudjús er blandaður í hlutföllum milli þykknis og vatns. Þá er mikilvægt að hafa á hreinu hver einingin er. (Til dæmis er hægt að tákna með \(\frac{3}{4}\) að það séu 3 hlutar þykknis á móti 4 hlutum vatns, en líka er hægt að segja hluti eins og hlutfall þykknis sé \(\frac{3}{4}\) af blöndunni.) Almennt táknar \(\frac{3}{4}\) hlutfallið sem lýsir því ef 3 mælieiningar (eða hlutir) af einni gerð eru á hverja 4 mælieiningar (eða hluti) af sömu eða annarri gerð, t.d. 3 lítrar af málningu á hverja 4 fermetra, 2 lauf á hverjar 5 lirfur, \ldots{}
+\item
+  \textbf{Hlutfall} sem lýsir stærð á hverja viðmiðunareiningu (rate): \(\frac{3}{4}\) er hraðinn (í km/klst) ef þú ferð \(\frac{3}{4}\) km á 1 klst. Oft er viðmiðunareiningin tími og oft eru ekki notuð brot, til dæmis púlsinn er 65 slög (á mínútu) og stundum eru notuð tugabrot, til dæmis eru vextir 7.5\% (á ári). Þetta er til dæmis túlkun á hallatölu línu, \(y\)-breyting á hverja einingarviðbót á \(x\).
+\item
+  \textbf{Tala} (number): ræð tala sem hefur ákveðna staðsetningu á talnalínunni: \(\frac{3}{4}\) er talan sem margfölduð með 4 gefur útkomuna 3.
+\end{enumerate}
+
+Við þetta má svo bæta stærðfræðilegri túlkun fyrir lesendur sem hafa lært um abstrakt algebru: Gerum ráð fyrir að við höfum mengi talna sem inniheldur margföldunarhlutleysuna \(1\) og mengið er þannig að sérhver tala í menginu (nema \(0\), ef \(0\) tilheyrir menginu) eigi sér margföldunarandhverfu í menginu. Þá getum við litið svo á að \(\frac{a}{b}\) tákni \(a\cdot b^{-1}\), svo brotið \(\frac{a}{b}\) er margfeldi staksins \(a\) og margföldunarandhverfu staksins \(b\). Önnur leið til að segja það sama er að brotið \(\frac{a}{b}\) sé tala, \(x\), sem leysir jöfnuna \(bx=a\). Hér þarf að bæta því við að mörg pör af tölum geta táknað „sama brotið``: brotin \(\frac{a}{b}\) og \(\frac{c}{d}\) eru jafngild ef og aðeins ef \(ad=bc\). Við sjáum til dæmis að bæði \(\frac{3}{4}\) og \(\frac{9}{12}\) leysa jöfnuna \(4x=3\).
+
+\section{Sambreytni og óbreytni}\label{sambreytni-obreytni}
+
+Þegar tvær breytistærðir tengjast og breytast saman eftir einhverri reglu er hægt að tala um \textbf{sambreytni}. Þetta samband er til dæmis tjáð með einhverju falli, \(y=f(x)\) eða einhverri jöfnu sem lýsir sambandi stærðanna. Þegar um að ræða eitthvert slíkt samband er eitthvað sem breytist ekki, nefnilega reglan sjálf, fallið, eða einhverjar fastar stærðir í jöfnunni. Við getum nefnt þær stærðir \textbf{óbreytur}.
+
+\subsection{Rétt hlutfall}\label{rett-hlutfall}
+
+Mikilvægt dæmi um sambreytni á grunnskólastigi eru stærðir sem eru \textbf{í réttu hlutfalli} hvor við aðra. Dæmi um það kemur fram í forsendum verkefna eins og eftirfarandi.
+
+\begin{quote}
+Tvær lirfur þurfa fimm laufblöð á dag til lifa.
+\end{quote}
+
+Hvers konar spurninga er hægt að spyrja út frá þessari forsendu? Hvað er það sem breytist ekki? Takið tíma í að finna dæmi áður en lengra er haldið, og leiðir til að svara þeim.
+
+Verkefnið getur verið um spurningar eins og:
+
+\begin{itemize}
+\tightlist
+\item
+  Hve mörg laufblöð á dag þurfa 12 lirfur?
+\item
+  Hve margar lirfur geta lifað á 15 (eða jafnvel 17) laufblöðum á dag?
+\item
+  Hve lengi lifa tvær lirfur á 100 laufblöðum?
+\item
+  Hvað þarf mörg laufblöð til að tvær þrjár lirfur lifi í 30 daga?
+\end{itemize}
+
+Það sem breytist ekki er hlutfallið milli fjölda laufblaða og fjölda lirfa (eða öfuga hlutfallið), sem er alltaf \(\frac{5}{2}\). Ef \(x\) táknar fjölda lirfa og \(y\) táknar fjölda laufblaða þá tengjast \(x\) og \(y\) með jöfnunni \(\frac{y}{x}=\frac{5}{2}\), eða \(y=\frac{5}{2}x\). Það er óbreytan í verkefninu.
+
+Almennt segjum við að tvær stærðir, \(x\) og \(y\), séu í réttu hlutfalli hvor við aðra ef \(\frac{y}{x}\) er fasti, sem kallast þá hlutfallsfasti eða hlutfallsstuðull. Í dæminu hér er þetta talan \(\frac{5}{2}\).
+
+Þegar við hugsum og drögum ályktanir um fullyrðingar eins og
+
+\begin{itemize}
+\tightlist
+\item
+  Ef \(x\) tvöfaldast, þá \ldots{}
+\item
+  Ef \(y\) tvöfaldast, þá \ldots{}
+\item
+  Ef \(x\) helmingast, þá \ldots{}
+\item
+  Ef \(y\) \(n\)-faldast, þá \ldots{}
+\end{itemize}
+
+þá erum við að fást við sambreytni: skoðum hvernig breyting á gildi einnar stærðar breytir gildinu á hinni stærðinni.
+
+Að sjálfsögðu geta stærðir tengst á annan hátt en með réttu hlutfalli. Þrenns konar tengsl þar sem hægt er að fást við sambreytni og koma við sögu í grunnskóla eru (notum \(x\) og \(y\)):
+
+\begin{itemize}
+\tightlist
+\item
+  Rétt hlutfall: \(\frac{y}{x}\) er fasti, eða \(y = kx\) þar sem \(k\) er fasti.
+\item
+  Öfugt hlutfall: \(x \cdot y\) er fasti, eða \(y = \frac{k}{x}\) þar sem \(k\) er fasti.\\
+\item
+  Fastur mismunur: \(x - y\) er fasti, eða \(y = x - k\) þar sem \(k\) er fasti.
+\end{itemize}
+
+\subsection{Verkefni um sambreytni}\label{verkefni-sambreytni}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Látum \(x\) og \(y\) vera í réttu hlutfalli hvor við aðra, \(\frac{y}{x}=30\). Hvernig breytist \(y\) ef \(x\) þrefaldast. Hvernig breytist \(y\) ef \(x\) hækkar um \(10\%\)?
+\item
+  Látum \(x\) og \(y\) vera í öfugu hlutfalli hvor við aðra, \(x \cdot y=30\). Hvernig breytist \(y\) ef \(x\) þrefaldast? Hvernig breytist \(y\) ef \(x\) hækkar um \(10\%\)?\\
+\item
+  Látum \(x\) og \(y\) vera með fastan mismun, \(x - y = 30\). Hvernig breytist \(y\) ef \(x\) þrefaldast? Hvernig breytist \(y\) ef \(x\) hækkar um \(10\%\)?
+\end{enumerate}
+
+\subsection{Bein upplifun af kvikri sambreytni}\label{ggb-sambreytni_1}
+
+Stærðfræðiforrit eins og GeoGebra geta verið leið til að nemendur skynji kvika sambreytni. Það þýðir að sjá hvernig breyting á einni stærð hefur áhrif á aðra stærð, um leið. Hér hefur GeoGebruforrit verið fellt inn í textann, og verkefnið er að finna út og setja fram með nákvæmum hætti, hvernig punktarnir eru háðir og hvernig breyting á staðsetningu eins punktar breytir staðsetningu annars punktar.
+
+\chapter{Um námsmat i stærðfræði}\label{namsmat_kafli}
+
+Hér eru nokkur atriði til umhugsunar úr bók Picciotto og Pemantle, með smávægilegum viðbótarútleggingum:
+
+\begin{itemize}
+\tightlist
+\item
+  Það er ekki hægt að kenna nema að hafa hugmynd um hver skilningur nemenda á efninu er. Hér er ekki átt við að hafa mælt nemendur á skala frá til dæmis litlum skilningi að góðum skilningi heldur að kennarinn viti í raun og veru eitthvað um það \textbf{hvernig} (á hvaða hátt) nemendur skilja hugtök, röksemdir og aðferðir. Þess vegna er námsmat mikilvægur þáttur í kennslu.
+\item
+  Höfum í huga að yfirferð (að leiðrétta og gefa einkunn fyrir) verkefna er ekki endilega góð nýting á tíma. Þú leiðréttir eitt verkefni í einu og það getur því tekið mikinn tíma að fara yfir námsmatsverkefni margra einstakra nemenda. Ef til vill væri hægt að nýta þann tíma betur? Til dæmis gætu nemendur tekið þátt í þessu, leiðrétt sín eigin verkefni eða annarra, með aðstoð eða svarlyklum.
+\item
+  Námsmat getur stutt kennara í því að stilla kennsluna á hæfilegt stig, endurskoða kennsluna.
+\item
+  Námsmat getur gefið bæði kennara og nemanda upplýsingar um það hver hæfni nemandans er.
+\item
+  Námsmat getur verið námstækifæri.
+\end{itemize}
+
+Allur sá tilgangur sem nefndur var hér að ofan næst best ef lítið er í húfi (``low-stakes''). Útkoma námsmatsins á ekki að vera refsing (og ekki heldur umbun). Fyrir þann tilgang að bæta nám er ekki nauðsynlegt að gefa einkunnir fyrir námsmatsverkefni, hvort heldur sem er á formi bókstafa, lita eða talna. En svo er það háð reglum skólans, sveitarfélaga og ríkis hvort og hvenær kennari þarf nauðsynlega að gefa einkunnir.
+
+\section{Próf og kannanir}\label{pruxf3f-og-kannanir}
+
+Fyrir kennara sem vinna í umhverfi þar sem þarf að gefa einkunnir er hagkvæmast að halda lítil próf eða kannanir. En það eru nokkur atriði sem hægt er að hafa í huga til þess að gera þau betri ef tilgangurinn er að styðja við nám. Þessi atriði eru frá Picciotto og Pemantle:
+
+\begin{itemize}
+\tightlist
+\item
+  Leyfið nemendum að fá eins mikinn tíma og þeir þurfa. Tímapressa hjálpar engum að sýna skilning sinn.
+\item
+  Ekki draga of mikið niður fyrir litlar reiknivillur. Setjið skilning í forgang. Hafið þó í huga að stundum eru reiknivillur vegna skorts á skilningi og það eru ekki þannig villur sem átt er við hér.
+\item
+  Látið reyna á skilning á efni sem er ekki alveg nýtt fyrir nemendum.
+\item
+  Hafið kannanir þar sem reynir á uppsafnað efni, allt frá byrjun annar.
+\item
+  Hafið með „bónus`` spurningar sem eru áskoranir fyrir sterkustu nemendurna, spurningar sem dýpka eða víkka út skilning á efninu. Þessar spurningar geta svo komið að notum fyrir alla nemendur í eftirvinnslu könnunar. En það á að vera hægt að fá hæstu einkunn án þess að leysa þessi verkefni.
+\end{itemize}
+
+Annað sem þessir höfundar stinga upp á er að meta þátttöku nemenda „í beinni`` þar sem kennari fylgist með því hvort nemendur séu að vinna vel, skráir það hjá sér og varpar upp á sýnilegan flöt. Dæmi um það sem kennari getur skráð eru hlutir eins og „Jón fór strax að vinna við verkefnið``, „Silja er að hjálpa Gunnari með erfitt verkefni``, „Nadira er að færa sig nær hópnum til að heyra betur útskýringarnar``.
+
+\section{Eftirvinnsla og endurtekningar}\label{eftirvinnsla-og-endurtekningar}
+
+Hér er eitt mikilvægasta ráðið um próf og kannanir í bók Picciotto og Pemantle:
+
+\begin{itemize}
+\tightlist
+\item
+  Látið leiðréttingar og úrvinnslu prófa „gilda``. Takið frá tíma í þetta. Hér skiptir máli að nemendur sjálfir bæti sínar lausnir og þeir megi hjálpast að og geti fengið stuðning kennara líka. Eftir slíka úrvinnslu ættu svörin líka að uppfylla meiri kröfur en á prófinu sjálfu.
+\end{itemize}
+
+Við þetta má bæta að það er hægt að skipuleggja þessa eftirávinnu með mismunandi hætti. Ein leið er að segja að könnunin sjálf gildi (til dæmis) 70\% en að eftirávinnslan gildi 30\%, eða prófið eftir þá vinnslu gildi 30\%. Það er líka hægt að láta nemendur fá sínar lausnir í hendur (óleiðréttar) og þeim svo skipt í hópa þar sem hver hópur fær eitt tómt próf og býr saman til sína bestu lausn á prófinu sem þá gildir (til dæmis) 30\% á móti upphaflega prófinu. Hér skal ítrekað að vægið á prófinu í heild ætti helst að vera lítið (low stakes) og að prósenturnar hér eru bara ein uppástunga. Það sem skiptir máli er grundvallaratriðið að eftirvinnsla verkefnisins skipti máli og fari fram.
+
+Í kafla Picciotto og Pemantle er töluverð umræða um slæmar röksemdir gegn því að nemendur fái að endurtaka próftöku. Lykilpunktarnir þar ganga í raun út á að útskýra að nemendur auki ekki skilning sinn með þvingunum og hótunum og að þvinganir og hótanir séu ekki vænlegar leiðir í kennslu. Hins vegar eru rök gegn endurteknum prófum að það eykur vinnu kennarans að útbúa, finna tíma fyrir, setja fyrir og fara yfir fleiri próf.
+
+Ef endurskoðun og endurvinnsla eru byggð inn í kannanir og próf, og þau gilda lítið hvert og eitt, er líklega óþarfi að hafa of miklar áhyggjur af endurtekningum á prófum sem ganga ekki vel. Picciotto og Pemantle stinga upp á að nemendur geti unnið úr prófi heima og að sú endurvinnsla geti hækkað einkunn á einhvern hátt (þó ekki upp í hæstu hæðir!)
+
+Það sem sagt er hér að ofan á að mestu við verkefni á formi skriflegra kannana og prófa en það eru auðvitað margar aðrar leiðir sem geta fléttast saman við slík verkefni. Til dæmis eru munnleg próf og kynningar, heimapróf, skýrslur, skapandi skrif og fleira.
+
+\chapter{Sköpun og skapandi hugsun í stærðfræðimenntun}\label{skopun}
+
+Nemendur geta verið skapandi í stærðfræði. Hér er fyrst og fremst átt við að nemendur séu stærðfræðilega skapandi en ekki að þeir búi til dæmis til söngtexta eða myndlist utan um fyrir fram gefna stærðfræði. Eftirfarandi umfjöllun byggir á grein Coles og Scott (2015), \href{https://doi.org/10.1080/14794802.2015.1047787}{Planning for the unexpected in the mathematics classroom: An account of teacher and student change. Research in Mathematics Education, 17(2), 128--147.} og
+
+Það sem getur falist í stærðfræðilegri sköpun eru til dæmis að:
+
+\begin{itemize}
+\tightlist
+\item
+  nemendur taki eftir einhverju, eða setji eitthvað fram, sem er óvænt og ferskt í umræðu eða við verkefnalausn
+\item
+  nemendur búi til sín eigin dæmi um stærðfræðilega hluti og sínar eigin stærðfræðilegu skilgreiningar
+\item
+  nemendur spyrji eigin spurninga og búi til eigin verkefni
+\item
+  nemendur fylgi eftir sínum eigin rannsóknum
+\item
+  nemendur velji sínar eigin leiðir til framsetninga á stærðfræði
+\item
+  nemendur setji fram sínar eigin tilgátur
+\item
+  nemendur noti stærðfræði til þess að búa til áhugaverða gripi, áþreifanlega eða með tölvuforritun
+\end{itemize}
+
+Sköpun hér þýðir ekki að um sé að ræða eitthvað alveg nýtt í heiminum heldur eitthvað \emph{nýtt fyrir nemendum}. Nemendur geta verið skapandi hvenær sem er og kennari sem vill stuðla að sköpun nemenda sinna í stærðfærði ætti að reyna að taka eftir því, fagna því og byggja ofan á það þegar það gerist.
+
+\section{Dæmi um verkefni þar sem nemendur búa til sína eigin stærðfræðilegu hluti}\label{duxe6mi-um-verkefni-uxfear-sem-nemendur-buxfaa-til-suxedna-eigin-stuxe6ruxf0fruxe6uxf0ilegu-hluti}
+
+\chapter{Gagnrýnin hugsun í stærðfræðimenntun}\label{gagnryni}
+
+Hvað gæti gagnrýnin nálgun á stærðfræðimenntun falið í sér? Til að hefja leikinn getum við bent á eftirfarandi punkta til skoðunar:
+
+\begin{itemize}
+\tightlist
+\item
+  Stærðfræðikennsla hefur samfélagslega virkni og áhrif sem blasa ekki endilega við og þarfnast \textbf{gagnrýni}
+\item
+  Stærðfræði getur verið tæki til að skilja raunveruleikann og þar með tæki til að \textbf{gagnrýna} stjórnmál og samfélag
+\item
+  Stærðfræði getur verið tæki til að móta raunveruleikann og þar með tæki til að stjórna og kúga, og jafnvel drepa fólk, og þessi virkni er oft falin og þarfnast \textbf{gagnrýni}
+\end{itemize}
+
+Þá þarf að gera grein fyrir því hvað \textbf{gagnrýni} er. Í hversdagslegu íslensku nútímamáli hefur orðið gagnrýni að minnsta kosti tvær merkingar, sem hvor um sig er tengd, en þó ekki jafngild, orðinu sem það átti upphaflega að samsvara úr erlendum málum. Merkingarnar tvær eru að gagnrýni þýði
+
+\begin{itemize}
+\tightlist
+\item
+  neikvæðni og niðurrif, aðfinnslur
+\item
+  að rýna til gagns -- nánast í hreinni andstöðu við neikvæðni og niðurrif
+\end{itemize}
+
+Hvorutveggja eru merkingar sem eru vissulega tengdar hugtakinu sem orðið gagnrýni átti að ná yfir, en eru þó ólíkar því. Orðið \textbf{gagnrýni} var kynnt í íslensku í grein árið 1896, og átti að samsvara orðinu sem er critique á ensku/frönsku, kritik á dönsku/þýsku, og eru ættuð eru úr grísku. Grikkir til forna notuðu orðið kritiké um „listina að dæma`` og í fræðilegri orðræðu merkir það að greina, meta og skilja eitthvað á dýptina, að láta til dæmis ekki blekkjast af yfirborðinu. Hugtakið virðist náskylt íslenska orðinu \emph{dómgreind}. Skýring orðasmiðsins og greinarhöfundarins Valtýs Guðmundssonar, árið 1896 er eftirfarandi:
+
+\begin{quote}
+Að »krítísera« er eiginlega það, að láta sjer ekki nægja að skoða hlutina eins og þeir líta út á yfirborðinu, heldur leitast við að rýna í gegnum þá og gagnskoða, til þess að sjá hina innri eiginleika þeirra, bæði kosti og lesti. Það er með öðrum orðum að kafa í djúpið og sækja bæði gullið og sorann, greina það hvort frá öðru og breiða hvorttveggja út í dagsbirtunni, svo að allir, sem hafa ekki sjálfir tíma eða tækifæri til að vera að kafa, geti sjeð, hvað er gull og hvað er sori. Þetta virðist oss að mætti kalla á íslenzku gagnrýni og gagnrýninn þann mann, sem sýnt er um að gagnrýna hlutina. (Sjá nánar í \href{https://uni.hi.is/eirikur/2023/09/27/ad-ryna-til-gagns-eda-hvad/}{pistli Eiríks Rögnvaldssonar, Að rýna til gagns eða hvað?}
+\end{quote}
+
+Í erlenda hugtakinu og fræðilega hugtakinu er sem sagt engin áhersla á gagnsemi heldur snýst gagnrýni um að skilja fyrirbæri, afhjúpa það sem ekki blasir við og taka ígrundaða afstöðu til hlutanna (að nota dómgreindina). Það getur verið gagnlegt og það getur komið út sem niðurrif en það er samt ekki víst að það sé beinlínis gagnlegt og það þarf heldur ekki að fela í sér sérstaka neikvæðni.
+
+Í samhengi stærðfræðimenntunar viljum við því nota stærðfræði sem tæki til að skilja og afhjúpa fyrirbæri (samfélagsleg, pólitísk, náttúruleg) og við viljum skilja og afhjúpa það hvernig stærðfræði og stærðfræðimenntun virkar í samfélaginu og hver áhrif stærðfræðinnar eru á heiminn. Gagnrýni spyr hvernig hlutirnir séu í raun en í mörgum fræðahefðum spyr hún líka hvort og hvernig hlutir gætu verið með öðrum hætti, og róttæk gagnrýni krefur okkur líka um afstöðu og aðgerðir til breytinga, jafnvel byltingar. Höfum í huga spakmælið frá Karl Marx:
+
+\begin{quote}
+Heimspekingarnir hafa aðeins túlkað heiminn á mismunandi hátt. En það sem máli skiptir er að breyta honum.
+\end{quote}
+
+\section{Gagnrýni á stærðfræðikennslu}\label{gagnryni_kennslu}
+
+Gagnrýnar nálganir á stærðfræðikennslu leiða til dæmis í ljós að stærðfræðikennsla getur valdið persónulegum skaða, getur viðhaldið ójöfnuði með hlutverki sínu sem útilokandi skólafag og hliðvörður inn á ýmsar námsbrautir og starfsferla, og getur með lúmskum hætti stuðlað að ofurvaldi \emph{tæknilegrar rökvísi} (tæknilegrar orðræðu, e. instrumental reason). Tæknileg rökvísi/orðræða gengur út á að orða alla mannlega starfsemi og tilveru sem verkefnið að finna skilvirkustu og hagkvæmustu leiðirnar að einhverjum markmiðum án þess að hægt sé að ræða um réttmæti markmiðanna sjálfra. Stærðfræði gegnir oft veigamiklu hlutverki vegna þess að skilvirkni og hagkvæmni eru oft reiknuð út með einhverjum hætti, og metin á einhvern mælikværða. Gagnrýni getur þá falist í að afhjúpa forsendur, hagsmuni og valdatengsl sem eru byggð inn í skilgreiningar á breytistærðum, formúlum og mælikvörðum. Stærðfræði getur líka veitt skilaboðum vísindalegt, virðulegt eða fræðilegt yfirbragð, og unnið þannig sem hluti af áróðri.
+
+\section{Gagnrýni á stærðfræði}\label{gagnryni_a_stae}
+
+Annað sem er gagnrýnivert er hvernig stærðfræðin sjálf getur valdið skaða: hún er notuð til þess að hanna vopn, hernaðar- og eftirlitstæki og ýmis önnur kúgunartæki. Gervigreind á formi risamállíkana er dæmi um nýlega stærðfræðilega tækni sem hefur haft mikil áhrif á tilveru margra. Ísraelsher notar stærðfræði, meðal annars háþróaða gervigreind, í þágu þjóðarmorðs. Margs konar stærðfræðileg tækni er notuð til að hafa stjórn og eftirlit með fólki. Rafræn skilríki, andlitsskannar, upplýsingasöfnun um netnotkun og símtöl, reiknirit sem velja tiltekin myndbönd fyrir fólk á Youtube og TikTok -- allt byggir þetta á stærðfræði. Stærðfræði er líka notuð til fjármálagjörninga, í hlutabréfaviðskiptum, rafmyntagreftri og utanumhaldi. Þessir hlutir geta haft gífurleg neikvæð áhrif á samfélög, líf fólks og tilveru. Og valdið er hjá þeim sem ákveða hvernig stærðfræðin virkar í hverju tilfelli: með því að ákveða hvað er mælt og talið og hvernig þær stærðir hafa áhrif á útkomuna.
+
+Við sem vinnum að stærðfræðimenntun viljum þó leggja áherslu á að stærðfræði geti líka nýst til þess að gera gott: hún er notuð á óteljandi sviðum til að bæta líf okkar. Stærðfræði veitir vísindum tungumál, hún gerir fólki mögulegt að tjá náttúrulögmál og regluleika, setja fram magnbundnar kenningar og reikna út spár fyrir framtíðina. Stærðfræði er grundvöllur tölvutækni og reiknilíkana fyrir veður, vexti og vírusa. Eitt af því sem rétt er að taka eftir um þessa hluti er að stærðfræðin í hlutunum er okkur flestum hulin. Það þarf töluverða þekkingu til að skilja hana og til að skilja hana í samhengi við tiltekna hluti og tækni þarf einnig þekkingu á hlutunum sjálfum. Almenningur á því erfitt með að meta hvort stærðfræðin er að „vinna sitt verk`` á réttmætan hátt. Aftur erum við á valdi þeirra sem ákveða hvaða breytur skipta máli og hvernig reiknað er út frá þeim.
+
+Ég dreg þetta saman svona: stærðfræði má nota bæði til góðs og ills og hún er notuð bæði til góðs og ills. En það getur verið erfitt fyrir utanaðkomandi að átta sig á því hvort er eða leggja mat á það hvort stærðfræðin (eða tæknin) gerir það sem sagt er að hún geri. Það eru pólítísk og siðferðileg álitamál í því hvernig stærðfræði er notuð, sérstaklega þegar hún er notuð til þess að gefa ákvörðunum það yfirbragð að þær séu einfaldlega stærðfræðilega rétt niðurstaða. Því það eru alltaf einhverjar tilteknar forsendur sem byggt er á og þær eru aldrei sjálfsagðar. Um þær gætu verið réttmæt átök. Stærðfræði er því pólitísk.
+
+\section{Stærðfræði sem tæki til að gagnrýna með}\label{stae_taeki_ryni}
+
+Opinber umræða, stjórnmál og áróður fela oft í sér stærðfræðilegar upplýsingar, rök og framsetningar. Það má því segja að pólitísk umræða sé stærðfræðileg. Þá er opinber umræða líka oft um málefni sem hægt væri að öðlast betri skilning á með stærðfræði og sá skilningur ætti að geta gefið forsendur fyrir betur undirbyggðum ákvörðunum. En munum engu að síður að varast tæknilega rökvísi: stærðfræði getur ekki gefið okkur neinar vísbendingar um hvað séu rétt og góð markmið.
+
+Í stærðfræðimenntun er því reynt að rannsaka möguleika þess að kenna nemendum að meta stærðfræðilegar upplýsingar, rök og framsetningar og að nota stærðfræði til að meta alls konar álitamál. Sem nýlegt dæmi tökum við umræðuna um flóttafólk, fólk sem flýr heimaland sitt þar sem það telur sig ekki geta lifað og leitar verndar í öðru landi. Á Íslandi eins og víðar á Vesturlöndum er ríkjandi orðræða að fjöldi fólk sem sækir um vernd aukist í sífellu. Hér er dæmi um það:
+
+Hér gæti spurning fyrir nemendur verið: er fullyrðing Björns Inga rétt? Og í framhaldinu: er hún réttmæt, út frá gögnunum sem hann sýnir? Hægt væri að halda áfram og spyrja: hve stórt hlutfall af öllum mannfjölda á landinu er fjöldi fólks sem sækir um alþjóðlega vernd? Þó er ef til vill mikilvægara að spyrja grundvallarspurninga eins og: hvaða máli skipta þessar tölur? Höfum við ekki siðferðislegar skyldu til að taka á móti þeim fjölda af fólki á flótta sem við getum? Af hverju er litið á fólk á flótta sem ógn?
+
+Önnur eldfim umræða er um loftslagsmál. Hannes Hólmsteinn Gissurarson hefur skrifað margar greinar þar sem hann afneitar loftslagsvísindum. Til dæmis hélt hann því ítrekað fram fyrir tæpum 20 árum (til dæmis árið 2008) að frá 1998 hefði hitafar í heiminum staðið í stað (Sjá Guðna Elísson, 2008) Þetta er endurómur af stefi sem íhaldsmenn héldu ítrekað fram á þessum árum, og hér er eitt dæmi (lauslega þýtt úr ensku):
+
+\begin{quote}
+Það er engin hnattræn hlýnun að eiga sér stað núna. Frávik frá meðalhitastigi á árunum 2001-2007 hafa verið 0.4, 0.46, 0.46, 0.43, 0.48, 0.42 og 0.41 gráða. Það að engin hlýnun hefur mælst á 21. öldinni hingað til, á sama tíma og útblástur CO 2 hefur aukist hraðar en nokkurn tíma, er eitthvað sem viðtekin sannindi og tölvulíkönin sem notast er við hafa algerlega mistekist að spá fyrir um (Barwell (2020), vitnað í Lawson, N. (2008). An Appeal to Reason: A Cool Look at Global Warming.))
+\end{quote}
+
+Það væri mögulegt að tengja þetta brot við framlag Björns Inga hér að ofan og leita að sameiginlegum stærðfræðilegum kjarna í röksemdunum: þau ganga bæði út á að velja „heppilegt`` úrtak úr stærra þýði, það er að segja ódæmigert úrtak. Úrtak Björns Inga er fjöldi í september 2025 og það er borið saman við fjölda í september 2024, væntanlega til þess að gefa í skyn að fjöldi fari sívaxandi. Úrtak Lawson/Hannesar eru hitatölur á árunum 2001-2007, væntanlega til þess að gefa í skyn að hitastig jarðar sé ekki að vaxa. Í hvorutveggja tilfellanna eru til meiri gögn sem sýna að úrtökin eru ekki góðir fulltrúar fyrir þýðið. Í heild er fjöldi fólks sem sækir um vernd mun minni heldur en á sama tíma 2024 og í heild hækkaði hitastig jarðar umtalsvert frá (til dæmis) 1850 auk þess sem að loftslagsvísindi búa yfir kenningum og líkönum sem útskýra bæði hlýnunina og það að hún er ekki algerlega regluleg. Við höfum svo auðvitað upplifað enn meiri og hraðari hlýnun frá 2007 og vitum því að árin 2001-2007 eru ekki dæmigerð.
+
+Annað dæmi úr loftslagsumræðu þar sem stærðfræðileg þekking getur skipt máli er eftirfarandi fullyrðing Hannesar Hólmsteins Gissurarsonar:
+
+\begin{figure}
+\centering
+\pandocbounded{\includegraphics[keepaspectratio]{images/hhg1.png}}
+\caption{Tilvitnun}
+\end{figure}
+
+Það mætti þá varpa upp þessari fullyrðingu fyrir eða eftir að nemendur hafa fengist við verkefni sem leiðir í ljós hvernig hugtakið „meðalhiti jarðar`` hefur einmitt mjög skýra merkingu, sem vissulega er stærðfræðileg smíð. Í einfaldaðri lýsingu, fyrir áhugasöm, er það gert svona:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fyrir hverja veðurstöð í stóru safni veðurstöðva um alla jörð er reiknað meðalhitastig yfir valið tímabil (til dæmis 30 ár).
+\item
+  Fyrir hverja stöð er fundið meðalhitastig hvers tiltekins árs.
+\item
+  Þá er reiknaður mismunur meðalhitastigs ársins og langtíma meðalhitastigs (30 ára tímabilsins). Þessi mismunur nefnist hitafrávik (e. anomaly).
+\item
+  Hitafrávik jarðar hvert tiltekið ár er meðaltal hitafrávika allra veðurstöðvanna á því ári.
+\end{enumerate}
+
+Eins og gagnrýnir lesendur sjá strax er margt í þessum raunverulegu átakamálum sem stærðfræðin getur ekkert hjálpað með þó að hún geti gefið skýrleika um sumt. Á endanum veltur það á afstöðu okkar til málanna hvort gildi breytistærðanna (tölurnar) og hallatala ferlanna (vaxtarhraði talnanna í tíma) skiptir máli. Lítum við á fólk sem sækir um alþjóðlega vernd sem fólk með mannréttindi eða lítum við á það sem ógn við samfélagið? Viljum við taka áhættuna á því að við í okkar landi komum vel út úr loftslagshamförum meðan önnur þurfi ef til vill að þjást eða farast? Kannski skiptir okkur bara meira máli að halda áfram að auka neyslu okkar?
+
+\section{Möguleikar í kennslu}\label{moguleikar_kennslu}
+
+Renert (2011) lagði fram þrenns konar leiðir í kennslu um/í sjálfbærni:
+
+\begin{itemize}
+\tightlist
+\item
+  Aðhæﬁng (accomodation): við nýtum samhengið til að kenna stærðfræði, notum til dæmis loftslagsbreytingar til að kenna um prósentur, meðaltöl, að finna jöfnu línu og svo framvegis. Við gerum lítið til að virkja \textbf{gagnrýni}.
+\item
+  Umbætur (reformation): reynum að vekja \textbf{gagnrýna} hugsun, fáum nemendur til að velta fyrir sér til dæmis gildum, siðferði og fegurð meðfram því að læra um prósentur, meðaltöl, finna jöfnu línu og svo framvegis. En við látum vera að efast um forsendur samfélagsgerðarinnar, neyslusamfélagið, einstaklingshyggju eða notkun stærðfræði.
+\item
+  Umbreyting (transformation): fáum nemendur til þess að \textbf{gagnrýna} forsendur samfélagsins, reiknilíkana og þeirra eigin menntunar og styðjum nemendur til að fylgja gagnrýninni eftir með aðgerðum. Við látum okkur heiminn varða eins og hann skipti okkur máli.
+\end{itemize}
+
+Kennaranemar og starfandi kennurar telja oft að þeir geti vel kennt út frá aðhæfingu og jafnvel umbótum, en umbreytingu er erfiðara að sjá fyrir sér. Kannski er ekki vel hægt að stunda svo róttæka kennsluhætti innan opinbers skólakerfis. Kannski þyrftum við að fara að dæmi Greta Thunberg og hætta í skólanum?
+
+\section{Heimildir}\label{gagnryni_heimildir}
+
+Barwell, R. (2020). Mathematics and politics? Climate change in the mathematics classroom. Í G. Ineson \& H. Povey (Ritstjórar), \emph{Debates in Mathematics Education} (2. útg.) (bls. 197--209).
+
+Eiríkur Rögnvaldsson. (2023). \emph{Að rýna til gagns -- eða hvað?}
+
+Guðni Elísson. (2008). Efahyggja og afneitun. \emph{Ritið, 8}(2), 77--114.
+
+Renert, M. (2011). Mathematics For Life: Sustainable Mathematics Education. \emph{For the Learning of Mathematics, 31}(1), 20--26.
+
+\chapter{Undrun}\label{undrun}
+
+Eins og stærðfræðingar lýsa sinni grein er stærðfræðiiðkun lifandi og skapandi ferli þar sem sannanir eru í fyrirrúmi \autocite{polya1990,su2020}. Movshovits-Hadar \autocite{movshovits-hadar1988} útskýrir hvernig sérhver setning (það er stærðfræðiregla, e. theorem) í námsefni skólanna (ef til vill með örfáum undantekningum) eigi rót sína að rekja til undrunar: ef ekkert hefði einhvern tíma verið óvænt við einhverja setningu hefði stærðfræðingurinn sem uppgötvaði hana varla haft fyrir því að setja hana fram, enginn hefði haft áhuga á henni og setningin hefði ekki ratað inn í námsefni skóla um allan heim. Movshovits-Hadar \autocite{movshovits-hadar1988} telur, eins og Lockhart að í kennslubókum sé iðulega búið að loka á möguleika nemenda til þess að upplifa nokkra undrun eða tilfinningar gagnvart efninu -- hið lifandi ferli hafi verið drepið og bútað niður í mola af dauðum staðreyndum. Ef fólk umgengst stærðfræði eins og safn af tilbúnum þekkingaratriðum og reikniaðferðum til þess að leggja á minnið án þess að reyna að skilja rökin að baki þeim, eða þá upplifa þá undrun sem felst í þeim, væri það í andstöðu við gildi fræðigreinarinnar og bæri ekki vott um umhyggju fyrir stærðfræði.
+
+Eitt af því sem gerir stærðfræðiiðkun ánægjulega er vitsmunaleg áreynsla. Ef hún væri ekki krefjandi væri litla nautn að hafa af henni. Raunar má segja um allar námsgreinar að þær séu verðugar sem skólagreinar því aðeins að í þeim felist meira en það sem blasir við án frekari athugana og heilabrota. Fræði og vísindi eru tilraun til að skynja og skilja heiminn betur. Ef stærðfræði væri ekkert annað en sjálfsagðir hlutir væri lítil ástæða til að kenna hana í skólum.
+
+\section{Dæmi: Pýþagóras}\label{pythagoras}
+
+Regla Pýþagórasar er á vissan hátt merkilegasta regla sem kynnt er nemendum á grunnskólastigi. Það fer þó auðvitað eftir því hvað við köllum merkilegt. Eitt af því sem við getum kallað merkilegt er að regla Pýþagórasar blasir alls ekki við. Ekkert segir auganu að hún hljóti að vera rétt og ekki einu sinni að hún sé líkleg. Til þess þarf nánari skoðun. Annað sem er merkilegt er að við nánari skoðun og hugsun er hægt að komast að henni og sanna hana. Ein tilraun til að láta reglu Pýþagórasar birtast fyrir fólki er að láta það fikta í eftirfarandi kvikri framsetningu:
+
+Þarna er ekki um neina sönnun að ræða, heldur bara verkefni af gerðinni „hverju tekurðu eftir``, og við getum tekið eftir því að þegar þríhyrningur hefur rétt horn er tiltekin regla á sambandi flatarmála þeirra ferninga sem reistir eru á hliðum þríhyrningsins. Við getum undrast yfir því að samanlagt flatarmál minni ferninganna er nákvæmlega jafnt flatarmáli stærsta ferningsins. Er það alltaf þannig? Hvers vegna?
+
+\chapter{Nokkur verkefni út frá grein Lockhart}\label{algebra-samhverfa}
+
+Hér eru nokkrir hlutir til að hugleiða í samhengi við lestur greinar Paul Lockhart, \href{https://archive.org/details/AMathematiciansLament}{A Mathematician's Lament}.
+
+\section{Algebra og daglegt líf}\label{algebra-og-daglegt-luxedf}
+
+Á blaðsíðu 8 í \emph{A Mathematician's Lament} eftir Paul Lockhart stendur að algebra snúist ekki um daglegt líf, heldur tölur og samhverfur. Svo setur hann fyrir spurningu sem hann segir einfalda og fallega:
+
+\begin{quote}
+Segjum að ég fái gefna summu og mismun tveggja talna. Hvernig finn ég út hverjar tölurnar eru?
+\end{quote}
+
+\subsection{Verkefni: Summa og mismunur}\label{verkefni-summa-mismunur}
+
+Leysið þetta verkefni. Ef þið hafið leyst það með bókstafareikningi skulið þið næst leysa það með því að skoða verkefnið á talnalínu (gerið ráð fyrir að allar tölur séu jákvæðar).
+
+Vísbending
+
+Gerið strik sem táknar summu, til dæmis \(A+B\). Merkið svo inn stað fyrir \(A-B\). Næst hugsið þið um það hvar þið merkið inn stað fyrir \(A\). Það er hægt að segja nákvæmlega hvar á strikinu, út frá því sem búið er að gera, hvar \(A\) er.
+
+\section{Samhverfur (breytileiki)}\label{samhverfur}
+
+Orðið samhverfa (symmetry) er notað í daglegu máli (og í stærðfræði) til að lýsa einhverju sem er eins og spegilmynd um einhverja speglunarlínu eða mynd sem hægt væri að snúa þannig að hún félli aftur ofan í sjálfa sig. Í stærðfræði er til aðeins almennari hugmynd um samhverfu sem Lockhart vísar í með orðinu \emph{symmetry}. Samhverfa er þá almennt \textbf{eiginleiki stærðfræðilegs hlutar sem breytist ekki ef einhverri tiltekinni aðgerð er beitt á hann}. Við lítum til dæmis svo á að ef við speglum, færum eða snúum rúmfræðilegum hlut sé hann áfram eins því að rúmfræðilegir eiginleikar hans (fjarlægðir og horn) hafa ekkert breyst. Eitt dæmi úr rúmfræði er að hringur breytist ekki þó að honum sé snúið (eiginleiki punktamengisins að vera hringur með sama geisla breytist ekki). Dæmi úr annarri átt væri að þegar við leggjum saman tölur þá breytist útkoman ekki þó að við breytum röð liðanna, \(5+3\)=\(3+5\). Samlagning hefur samhverfu, útkoman breytist ekki við þá aðgerð að víxla liðunum. Við getum líka einfaldlega talað um að eitthvað haldist óbreytt við einhverja aðgerð. Þetta er þá náskylt hugtakinu \emph{breytileiki}, sjá kafla \ref{breytileiki}.
+
+\subsection{Hvaða aðgerðir breyta ekki lausnum jafna}\label{samhverfur-jafna}
+
+Finnum samhverfuaðgerðir (eins margar og við getum) í verkefninu um summu og mismun hér að ofan, sem sagt: aðgerðir sem breyta ekki lausnamengi verkefnisins um summu og mismun.
+
+Vísbending
+
+Hvaða aðgerðir þekkið þið sem má framkvæma á jöfnu þannig að hún haldi áfram að hafa sömu lausnir?
+
+\section{Námskrá}\label{namskra-lockhart}
+
+Skoðið textann um stærðfræði í \url{https://www.adalnamskra.is/grunnskoli/kafli-25-staerdfraedi-2024}.
+
+\subsection{Verkefni: Aðalnámskrá út frá Lockhart}\label{verkefni-namskra-lockhart}
+
+Finnið fullyrðingu í námskránnni um stærðfræði sem Lockhart væri sammála og fullyrðingu sem Lockhart væri ósammála.
+
+\section{Kennsluefni um jöfnur}\label{kennsluefni-jofnur}
+
+Í textanum gefur Lockhart dæmi þar sem nemendum er einfaldlega sagt: „hér er aðferðin, nú notið þið hana``. Dæmi á bls. 5 er eftirfarandi:
+
+\begin{quote}
+``The area of a triangle is equal to one-half its base times its height.'' Students are asked to memorize this formula and then ``apply'' it over and over in the ``exercises.'' Gone is the thrill, the joy, even the pain and frustration of the creative act. There is not even a problem anymore. The question has been asked and answered at the same time---there is nothing left for the student to do.
+\end{quote}
+
+\subsection{Verkefni: Samanburður kennsluefnis um jöfnur}\label{verkefni-kennsluefni-lockhart}
+
+Skoðið eftirfarandi tvö inngangsverkefni um jöfnur og lausnir þeirra úr tveimur ólíkum kennslubókum (A og B). Berið nálganirnar saman. Er önnur þeirra í anda „hér er aðferðin, nú notið þið hana``? Er eitthvað að segja um breytileika (samhverfur) í annarri hvorri eða báðum?
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Stika_jafna} 
+
+}
+
+\caption{Verkefni A (Stika 3b)}\label{fig:fig-stika-jafna}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/Almenn_stae_jofnur} 
+
+}
+
+\caption{Verkefni B (Almenn stærðfræði I)}\label{fig:fig-almenn-stae-jofnur}
+\end{figure}
+
+\section{Dæmi Regla Þalesar}\label{lockhart-thales}
+
+Regla Þalesar er undrunarefni (sjá kafla \ref{undrun}) eins og aðrar reglur í stærðfræði. Í grein Lockharts er fjallað um reglu Þalesar á blaðsíðum 20-22.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Thales-teikn} 
+
+}
+
+\caption{Þríhyrningur (Regla Þalesar)}\label{fig:fig-Thales-teikn}
+\end{figure}
+
+Hann gefur okkur mynd af þríhyrningi innan í hálfhring. Það er alls ekki ljóst að hornið sem myndast við punktinn á boganum sé rétt horn. Og ætti hornið ekki að breytast ef punkturinn færist?
+
+Hana má kynna á mismunandi vegu og hér verða gefnar nokkrar hugmyndir:
+
+\subsection{Regla Þalesar með pappír og blýanti (eða í huganum)}\label{thales-pappir}
+
+Teiknið eða sjáið fyrir ykkur hálfhring. Hálfhring er hægt að búa til með því að gera fyrst hring og draga svo miðstreng, sem er strik gegnum miðju hringsins með báða endapunkta á hringferlinum. Teiknið svo eða sjáið fyrir ykkur punkt á boganum og strik frá þessum punkti að endapunktum miðstrengsins. Hve stórt er hornið sem myndast milli þessara tveggja strika?
+
+\subsection{Regla Þalesar með kviku rúmfræðiforriti}\label{thales-geogebra}
+
+Á myndinni er hálfhringur (brotin ferill) og miðþverill hans milli tveggja punkta. Á myndinni er einnig frjáls punktur, C, og mælitala hornsins sem myndast milli strikanna frá endapunktum miðstrengsins og C.
+
+Spurningin er hvort hægt er að segja eitthvað um stærð hornsins ef C út frá því hvort punkturinn er fyrir utan, fyrir innan eða lendir nákvæmlega á hringboganum.
+
+Þegar við höfum velt þessu fyrir okkur og prófað og pælt er hægt að kynna reglu Þalesar: Segjum að ABC sé þríhyrningur þar sem AB er miðstrengur hrings. Ef C er á hringferlinum þá er C rétt horn. Og einnig gildir reglan í hina áttina: Ef C er rétt horn liggur C á hringferlinum. En stærðfræðin spyr: Hvers vegna? Hvernig vitum við að það er satt?
+
+Lockhart sýnir sönnun úr kennslubók. Svo er sýnd lausn nemanda í 7. bekk. Setjið ykkur inn í báðar sannanirnar. Berið þær saman. Notar önnur hvor þeirra (eða báðar) samhverfu: eitthvað sem breytist ekki við einhverja aðgerð? Finnst ykkur önnur hvor fallegri, sniðugri, gagnlegri eða meira sannfærandi?
+
+Skoðið umfjöllun um reglu Þalesar í Skala 2b, bls. 29-30. Hvernig kemur hún út í samanburði?
+
+Að lokum spyrjum við: Hver er tilgangurinn með því að hafa þessa reglu í kennslubókinni, með hliðsjón af markmiðakafla aðalnámskrár, og með hliðsjón af stærðfræði sem „listinni að útskýra`` eða „ævintýri`` (hvoru tveggja nefnt hjá Lockhart) eða stærðfræði sem gagnlegu tæki, mikilvægu fyrir störf og efnahag?
+
+\chapter{Um nauðynleg sannindi og venjusannindi}\label{naudsyn_venjur}
+
+\section{Nauðsynlegt og hefðbundið (Hewitt)}\label{abitrary-necessary}
+
+\chapter{Forsendur stærðfræðimenntunar}\label{forsendur-staemenntunar}
+
+Af hverju er stærðfræði kennd í skólum? Hvernig á að kenna stærðfræði? Hvað er stærðfræði? Þetta eru allt grundvallarspurningar sem er bæði ómögulegt að svara almennt en það er eiginlega líka ómögulegt fyrir kennara að hafa ekki einhvers konar svör við. Við getum sagt að svörin séu hluti af starfskenningu kennarans og svörin eru ekki altæk heldur hefur hver og einn kennari (vonandi) rökstuddar tilgátur og sýn á þær.
+
+\section{Af hverju er stærðfræði kennd í skólum?}\label{af-hverju-stae}
+
+Um allan heim er stærðfræði skólafag. Stjórnvöld, hvort sem þau eru kosin eða ríkja í krafti einræðis, setja í lög að nemendur skuli læra stærðfræði. Í opinberum námskrám kemur fram hvaða efni sé til náms eða hvaða hæfni skuli stefnt að, og oft fylgja með einhver rök og réttlætingar. Skólafólk, skólastjórar, kennarar og menntafrömuðir setja líka stundum fram ástæður fyrir því að stærðfræði sé kennd í skólum. Sama á við um almenning.
+
+\subsection{Hvað finnst þér?}\label{thinar-astaedur}
+
+Hvaða ástæður eru til að kenna stærðfræði í skólum? Hvaða ástæður eru réttmætar og hverjar ekki? Skrifið hjá ykkur helstu ástæður sem koma upp í hugann. Þegar þú hefur lokið við það geturðu skoðað nokkrar ástæður í punktunum hér að neðan. Þá er rétt að ígrunda og ræða við aðra og mynda sér dýpri sýn.
+
+Punktar
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Stærðfræði er nauðsynleg fyrir samkeppnishæfni þjóðarinnar.
+\item
+  Stærðfræði er nytsamleg fyrir land, þjóð og heiminn.
+\item
+  Stærðfræði er gott tæki til að finna efnilegt bóknámsfólk.
+\item
+  Stærðfræði er gagnleg fyrir einstaklinga í daglegu lífi.
+\item
+  Stærðfræði ævintýri sem allar manneskjur eiga rétt á að upplifa.
+\item
+  Stærðfræði þjálfar hugann.
+\item
+  Stærðfræði geymir dýpstu og öruggustu sannindi heimsins.
+\item
+  Stærðfræði er nauðsynleg fyrir hvern og einn til að fá góða atvinnu.
+\end{enumerate}
+
+\section{Hvernig á að kenna stærðfræði?}\label{hvernig-stae}
+
+Hugsið ykkur aðstæður þar sem verið er að kenna stærðfræði (þú ímyndar þér að þú sért kennarinn, nemandinn eða áhorfani). Hvað gerir kennarinn og hvað gerir nemandinn? Hvað væri rétt að gera? Hvað væri rangt að gera?
+
+Ef þú hefur gefið þér stutta stund í þessa ímyndun þá hefurðu gefið þér tilekna gerð af nemanda og aðstæðum og undir niðri er eitthvert tiltekið markmið. Spurningin „hvernig á að kenna stærðfræði`` eða „hvernig er best að kenna stærðfræði`` er auðvitað allt of almenn. Við þurfum að minnsta kosti að taka fram:
+
+\begin{itemize}
+\tightlist
+\item
+  Hverjum erum við að kenna?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Börnum, unglingum, fullorðnum
+  \item
+    Verðandi kennurum, starfandi læknum
+  \end{itemize}
+\item
+  Í hvaða aðstæðum?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Í skólum, kennslustofum, á netinu
+  \item
+    Blönduðum bekk eða getuskiptum bekk
+  \item
+    Einum árgangi í einu eða fleirum
+  \item
+    Alla daga vikunnar eða eitt kvöld í viku
+  \end{itemize}
+\item
+  Með hvaða markmið?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Að hinir „bestu`` nái sem lengst og geti tekið við stærðfræðilegu störfunum (séð um að þróa nýja tækni, reiknað út og ákveðið flókin ferli og skipulag, \ldots)
+  \item
+    Að allir nái lágmarksfærni í reikningi
+  \item
+    Að öll fái að njóta þess að skilja, rökræða og rannsaka stærðfræði
+  \end{itemize}
+\end{itemize}
+
+Hver lítur þú á að séu réttmæt markmið með stærðfræðikennslu? Við getum til dæmis hugsað okkur markmið skyldunáms í grunnskóla, en þú gætir líka hugleitt annan vettvang ef hann á betur við. Til dæmis: hver eru markmið stærðfræðikennslu á tiltekinni braut í framhaldsskóla?
+
+\section{Hvað er stærðfræði?}\label{hvad-stae}
+
+Til er heil grein heimspekinnar sem reynir að svara spurningunni hvað stærðfræði sé eiginlega. Um það eru gefnar út margar bækur á hverju ári. Fræðasviðið stærðfræðimenntun lítur yfirleitt á málið út frá félagseg og efnislegu sjónarhorni: stærðfræði er allt sem fólk gerir undir heitinu \emph{stærðfræði}.
+
+\subsection{Hvað er stærðfræði í þínum huga?}\label{stae-thinum-huga}
+
+Hvað er stærðfræði í þínum huga? Hvert er hlutverk stærðfræði fyrir þig, aðra einstaklinga og samfélagið? Skráðu hjá þér þínar hugmyndir áður en þú skoðar punktana.
+
+Punktar
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Reikningur
+\item
+  Að setja upp stærðfræðilíkan af raunverulegum aðstæðum til þess að skilja, stjórna og spá fyrir um framvindu
+\item
+  Að rannsaka eðli hugmynda okkar um rými, stærðir, tíma, orsakir, lögmál, regluleika
+\item
+  Samfélag stærðfræðinga, stærðfræðinotenda, óslitinn samræðuþráður í meira en tvö þúsund ár
+\end{enumerate}
+
+Allt það sem nefnt er hér í athugasemd fellur undir hatt stærðfræðinnar. Og kannski fannst þú eða aðrir samræðufélagar aðrar hliðar hennar. Fyrir marga er stærðfræði fyrst og fremst reikningur.
+
+\section{Niðurstöður stærðfræðimenntunar}\label{staemennt-statements}
+
+Stærðfræðimenntun hefur verið til sem sjálfstætt fræðasvið í um það bil 50 ár. Rannsóknir í stærðfræðimenntun hafa leitt ýmislegt í ljós en þær geta ekki svarað því hvernig best er að kenna stærðfræði, vegna þess að það fer eftir markmiðunum (og ótalmörgu öðru, sem stærðfræðimenntun hefur einmitt leitt í ljós). Við getum vissulega sagt ýmislegt um hvað er ekki líklegt til árangurs (jafnvel sumt sem virðist vera góð hugmynd) og við getum útskýrt hvers vegna margar spurningar stærðfræðikennslu og -nám eru miklu flóknari en maður gæti haldið við fyrstu sýn. Vel þekkt og gömul tilvitnun segir líka
+
+\begin{quote}
+Stærðfræðimenntun er miklu flóknari heldur en þú bjóst við jafnvel þó að þú hafir búist við því að hún væri flóknari en þú bjóst við. (Ed Begle)
+\end{quote}
+
+\printbibliography
+
+\end{document}

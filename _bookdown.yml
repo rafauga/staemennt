@@ -1,0 +1,11 @@
+delete_merged_file: true
+output_dir: "docs"
+book_filename: "st_grunnskola"
+language:
+  ui:
+    chapter_name: "Kafli "
+    references: "Heimildir"
+  label:
+    tab: "Tafla "
+    fig: "Mynd "
+    eq: "Jafna "

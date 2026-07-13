@@ -1,0 +1,39 @@
+# Þrautalausnir og verkefni {#thrautir-verkefni}
+
+Sígilt sannleikskorn um stærðfræðinám er það að til þess að læra stærðfræði verði fólk að **brjóta heilann**. Stærðfræðinám gengur ekki fyrst og fremst út á að læra að fylgja reikniaðferðum heldur að geta fengist við verkefni sem er ekki augljóst fyrirfram hvernig hægt er að leysa.
+
+Í enskum textum er oft talað um **problem solving** í þessu samhengi en þá er átt við að nemendur takist á við verkefni sem er ekki hægt að leysa með því að einfaldlega beita þekktri aðferð eða herma eftir sýnidæmi. Problem solving hefur stundum verið þýtt sem **þrautalausnir** en það orð hefur ef til vill of miklar tengingar við tiltekin einkenni verkefna, eins og að það þurfi mikla hugkvæmni til að leysa það, eða að það sé mjög erfitt. Þess vegna tölum við stundum frekar um **verðug verkefni** (sem er svo þýðing á enska orðinu rich task). Þá er hugmyndin að þó að verkefnið sé krefjandi sé það líka aðgengilegt (með lágan þröskuld) og að hugkvæmnin sem þarf sé ekki óraunhæf. Best er ef verkefnið feli bæði í sér eitthvað sem allir ráða við en að það leiði einnig til mjög krefjandi spurninga sem reyni á hugkvæmni þeirra sem lengst eru komnir. 
+
+Í íslenskri [Aðalnámskrá fyrir grunnskóla](https://www.adalnamskra.is/grunnskoli/kafli-25-staerdfraedi-2024) segir til dæmis í almennum kafla um stærðfræði: 
+
+> Nemendur þurfa að fá tækifæri til að leita lausna, rannsaka, setja viðfangsefni fram á fjölbreyttan hátt, beita skapandi hugsun, ígrundun og röksemdum og að tjá sig um viðfangsefni sín með orðaforða stærðfræðinnar og grundvallarhugtökum hennar. 
+
+Auk þess eru skilgreind hæfniviðmið um Þrautalausnir undir viðmiðum fyrir  **Vinnulag stærðfræðinnar** þar sem segir meðal annars að við lok 10. bekkjar geti nemandi:
+
+> nýtt fjölbreyttar reikniaðgerðir og stærðfræðilegt samhengi til að leysa þrautir og rökstutt svör sín.
+
+Þennan texta má gagnrýna því það er óljóst hvað fjölbreyttar reikniaðgerðir eru og líka hvað það er að nota reikniaðgerðir til að rökstyðja svör. Líklega er átt við að nemendur geti leyst þrautir og rökstutt svörin og í námskrám annarra ríkja eru yfirleitt sambærileg markmið en betur orðuð. Í námskrá fyrir England segir til dæmis að markmiðið sé að „all pupils“ 
+
+> can solve problems by applying their mathematics to a variety of routine and non-routine problems with increasing sophistication, including breaking down problems into a series of simpler steps and persevering in seeking solutions [National curriculum in England: mathematics programmes of study](https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study).
+
+Í bandaríska [Common Core staðlinum](https://www.thecorestandards.org/Math/Practice/) segir meðal annars að nemendur eigi að "make sense of problems and persevere in solving them" og í Singapúr eru þrautalausnir einskonar miðja og meginmarkmið allrar námskrárinnar: „The central focus of the mathematics curriculum is the development of mathematical problem-solving competency“, svo einhver dæmi séu nefnd. 
+
+Þrátt fyrir að bæði stærðfræðimenntun sem fræðasvið og opinberar námskrár mælist til mikillar áherslu á að nemendur fáist við að leysa verðug verkefni er raunveruleikinn víða um heim (og meðal annars á Íslandi) sá að nemendur eyða mestum af sínum tíma í að reikna dæmi samkvæmt forskrift, herma eftir sýnidæmum, eða fylgjast með eða hlusta á kennara útskýra eitthvað. Og þá er ótalinn sá tími sem fer í hluti sem koma stærðfræðináminu ekki við.
+
+Kennarar geta gert margskonar hluti til að auka vægi vinnu með verðugum verkefnum. Sumar kennsluaðferðir eru sérstaklega hannaðar til þess og fela í sér róttækar breytingar frá hefðbundnum kennsluháttum. Ein þeirra, sem hefur náð nokkurri útbreiðslu er **Hugsandi kennslustofa** þar sem nemendum er skipt, sýnilega, í slembna hópa sem vinna saman að lausn verkefna á lóðréttum útstrokanlegum fleti (eins og tússtöflu). Lykilatriði í þeirri kennsluaðferð er að kennari kynni verkefnið fyrst munnlega með nemendum og hugi vel að því að taka saman lausnir og lærdóm af verkefnavinnunni ásamt því að gefa nemendum tíma til að kanna eigin skilning með einstaklingsverkefnum á eftir þessari vinnu. Um þessa aðferð má lesa í stuttri grein, [Hvatt til hugsunar í stærðfræði](https://skolathraedir.is/2019/11/15/hvatt-til-hugsunar-i-staerdfraedi/) og kynna sér svo betur með lestri bókarinnar [Hugsandi skólastofa í stærðfræði – Bók fyrir kennara á öllum skólastigum](https://haskolautgafan.is/en/products/hugsandi-skolastofa-i-staerdfraedi-bok-fyrir-kennara-a-ollum-skolastigum). 
+
+## Eignarhald og tileinkun {#eignarhald}
+
+Við segjum að nemandi hafi **tileinkað** sér efni eða **gert það að sínu** ef það hefur **merkingu** fyrir honum. Í því felst að nemandinn skilur ný hugtök í gegnum þau sem hann hafði áður gert að sínum, og að hann sjái að hann hefur, eða hefði getað, uppgötvað þau sjálfur. Hann skilur þau svo vel að hann getur endurbyggt þau þó að hann gleymi þeim. Efnið er orðið eign hans og samofið honum, eins og nemandinn sjálfur sé höfundur efnisins. Á ensku er talað um **ownership** sem þýðir beinlínis **eignarhald**. Það er segin saga að hugmyndir sem maður er höfundur að sjálfur eru fastari í sessi heldur en þær sem maður þiggur frá öðrum. Þess vegna stefnum við að því að nemendur upplifi sjálfa sig sem höfunda stærðfræðinnar sjálfrar eins mikið og mögulegt er. 
+
+Við viljum að nemendur séu áræðnir og hafi frumkvæði í námi sínu. Við viljum að þeir leggi til (frá eigin brjósti) í meira mæli en að þeir taki við frá kennara. Picciotto og Pemantle skrifa um **initiative** sem þýðir frumkvæði. Nemandi þarf til dæmis að leggja í að reyna við verkefni þó að þeir viti ekki alveg hvernig það muni leysast. Þeir bíða ekki eftir því að kennarinn segi þeim nákvæmlega hvað á að gera. Stærðfræðimenntafræðingurinn John Mason notar hugtakaparið **að taka við** (assenting) og **að leggja til** (asserting) til að vekja okkur til vitunar um þessar tvær ólíku afstöður. Hann bendir á það að leggja til felur í sér hugrekki til að taka áhættu með því að orða hugsun sína við aðra og að vera tilbúin að læra af mistökum, að búa til og prófa eigin tilgátur og að reyna að hugsa hugmyndir og aðferðir sjálf frá grunni.
+
+Þegar kennslan gengur út á að nemendur fáist við verðug verkefni þjálfast þeir í því að leggja til í stað þess að taka við. 
+
+## Að kenna með og til þrautalausna
+
+Eins og áður er getið hér í kaflanum er nauðsynlegt að brjóta heilann til að læra stærðfræði. Þannig kennum við stærðfræði **með** því að glíma við verðug verkefni. Sum vilja ganga lengra og kenna nemendum að verða betri í því að leysa þrautir, að kenna **til** þrautalausna. 
+
+
+
+

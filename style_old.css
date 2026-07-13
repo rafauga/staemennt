@@ -1,0 +1,117 @@
+/* Caption (aðallega fyrir myndir) */
+.figure > p.caption {
+  color: #777;
+  margin-top: 0.3em;
+}
+
+/* Ef þú vilt líka caption-stíl utan figure (sjaldgæft), notaðu þetta í staðinn:
+p.caption { color:#777; }
+*/
+
+/* Inline code í texta */
+p code {
+  white-space: inherit;
+}
+
+/* Code blocks */
+pre {
+  word-break: normal;
+  word-wrap: normal;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+/* Figures (gitbook) */
+.figure {
+  margin-top: -0.3em !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* Source code wrapper (gitbook / pandoc) */
+.sourceCode {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+/* Minnka bil á milli texta og myndar */
+p + .figure {
+  margin-top: 0em !important;
+}
+
+/* Minnka almennt bil fyrir figure */
+.figure {
+  margin-top: 0em !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* Minnka bil undir málsgreinum */
+p {
+  margin-bottom: 0.6em;
+}
+
+/* Caption nær mynd */
+.figure > p.caption {
+  margin-top: 0em;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+table, th, td {
+  border: 1px solid black !important;
+}
+
+th, td {
+  padding: 6px;
+  vertical-align: top;
+}
+
+.with-borders table {
+  border-collapse: collapse;
+}
+
+.with-borders th,
+.with-borders td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+details.hint {
+  margin: 1em 0;
+  padding: 0.5em;
+  border-left: 4px solid #999;
+  background: #f8f8f8;
+}
+
+img.framed {
+  display: block;
+  margin: 1.5em auto 0.5em auto;
+  border: 1px solid #999;
+  padding: 10px;
+  background: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+}
+
+.figure {
+  text-align: center !important;
+}
+
+.figure p.caption {
+  text-align: center !important;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5em !important;
+  margin-bottom: 1.5em !important;
+  width: 100%;
+}
+
+.figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

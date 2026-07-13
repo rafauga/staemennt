@@ -1,0 +1,64 @@
+# Kennslunálganir og stærðfræðistríð {#nalgangir-strid}
+
+Fólk er oft mjög ósammála um það hvernig stærðfræðikennsla á að fara fram. 
+
+## Togstreitur {#togstreitur}
+
+Það sem stundum er kallað *hefðbundin stærðfræðikennsla* einkennist af því að kennarinn sýnir nemendum hvernig hægt er að leysa tilteknar gerðir af verkefnum (eða „hvernig á“ að leysa þær) og nemendur æfa sig svo á samsvarandi dæmum hver fyrir sig. Í slíku fyrirkomulagi er hætt við því að áherslan verði of mikil á aðferðir án skilnings (þ.e. nemendur öðlast eingöngu tækniskilning). Markmiðið með stærðfræðikennslu er hins vegar skilningur (þ.e. venslaskilningur). Góðir stærðfræðikennarar sem vinna innan þessa ramma, eða nýta sér hann ásamt öðrum aðferðum, útskýra hlutina vel og þar er möguleiki á því að nemendur bæti við venslaskilning sinn. Góðar útskýringar geta hins vegar blekkt nemendur til að halda að þeir skilji eitthvað sem þeir gera í raun og veru ekki og það að reyna einfaldlega að muna útskýringarnar virkar ekki vel fyrir flesta. Það þarf meira til, einhverja vitsmunalega vinnu, að brjóta heilann, að hugsa á einbeittan hátt.   
+
+Þess vegna leggur stærðfræðimenntafræði til að kennslan felist meira í því að nemendur sjálfir reyni að leysa verkefni án þess að reyna að herma eftir því sem kennarinn hefur gert. Þá er hugmyndin að nemendur sjálfir geti uppgötvað stærðfræðileg sannindi og hugtök. Slíkt fyrirkomulag krefst þó vandaðs undirbúnings, vals á verkefnum og skipulags um verkefnavinnuna. Ef það er ekki gert er hætt við að nemendur læri hvorki aðferðir né nái skilningi. Venslaskilningur kemur ekki fram sjálfkrafa þó að nemendur fáist við verðug verkefni. Uppgötvanir þarf að festa í sessi með umræðu og ítrekun. Það þarf að leiða í ljós með nemendum hvað sé mikilvægt, hvað sé þess virði að festa í minni, hvernig uppgötvunin tengist öðru efni og hvernig það bregður nýju ljósi á fyrri þekkingu, auk þess sem nemendur þurfa æfingu í að beita því sem þau uppgötvuðu, eða því sem leitt var í ljós með samtali eftir heilabrotin.
+
+Undirliggjandi í allri umræðu um stærðfræðikennslu er togstreita milli þess hve mikið kennarinn á að sýna nemendum beint (bein kennsla, kynningar, fyrirlestrar) og hve mikið nemendur geta byggt upp stærðfræðina sjálf. Hægt er að lesa um það með því að fletta upp „math wars“ á netinu. Ein af þeim röksemdum sem „hefðarsinnar“ beita er að segja að nemendur þurfi að hafa vald á grunnfærni áður en þeir geta byggt upp hugtakaskilning. Þetta er ekki rétt, en rétta myndin er ekki heldur að það sé hægt að hafa góðan hugtakaskilning án færni. Hvoru tveggja þarf til og oftast þarf að fara ítrekað á milli: bæði að reikna og að hugsa um merkingu og rökin á bakvið. 
+
+Hve mikið á að hjálpa nemendum með stærðfræðiverkefni? Það er freistandi fyrir kennara að einfaldlega sýna nemendum hvernig hægt er að leysa verkefnið. Það er líka algengt að nemendur sæki það mjög stíft. En þá er hætt við að nemendur hætti að hugsa og brjóta heilann, og læri því lítið af verkefninu. Listin er að svara þannig að við stöðvum ekki hugsun nemenda heldur hjálpum þeim að hugsa áfram. Oft er hægt að svara með spurningu á móti en einstaka sinnum er hægt að gefa vísbendingu án þess að gefa svarið eða stela allri hugsuninni. Góð vísbending beinir athygli nemandans að lykileiginleikum þess stærðfræðilega viðfangs, þeirra hugtaka eða þeirrar framsetningar sem hann er að reyna að átta sig á. Einnig getur verið nauðsynlegt að rifja upp með nemandanum merkingu einhverra orða eða tákna. Komið verður mun meira inn á þessi atriði síðar. 
+
+Önnur skyld togstreita er milli umhyggju fyrir nemendum og umhyggju fyrir greininni, eða „commitment to students“ á móti „commitment to the discipline“ eins og Picciotto og Pemantle kalla það. Samkvæmt þeim felst góð kennsla **alls ekki** í því að finna milliveg heldur **verður að gera hvoru tveggja**. Hvert tiltekið námsefni eða efnisatriði þarf sína sérstöku nálgun og „dans“ milli glímu (hugsunar, vitsmunalegrar vinnu) og skýringa og umræðu. Þetta fer fram og til baka. 
+
+Oft er of mikið gert úr því að stærðfræði byggi alltaf á því sem undan er komið eins og í beinni keðju þar sem engan hlekk má vanta. Vissulega *er* stærðfræði meira í þessa veru en margar aðrar greinar en þetta er samt of einfölduð mynd. Það er oft hægt að skilja stærðfræðileg efni þó að eitthvað vanti upp á þekkingu á einhverju sem „ætti að koma á undan“. 
+### Dæmi {#daemi-margf-tafla}
+
+Margföldunartaflan er sígilt dæmi um efnisatriði sem fólk deilir um. Annars vegar telja sumir rétt að leggja mikla áherslu á að nemendur æfi sig og læri $10 \times  10$-töfluna utanbókar og geti fundið hvert margfeldi í henni hratt og örugglega. Hins vegar segja aðrir að það sé mikilvægara að þróa talna- og aðgerðaskyn sitt þannig að maður skilji eiginleika margföldunar vel, og geti nýtt sér það til að finna margfeldin örugglega en ef til vill ekki alveg sjálfvirkt. Fólk í þeim hópi myndi yfirleitt frekar vilja tala um að „festa í minni“ margföldunartöfluna, sem getur gerst með því að vinna með margföldun á marga vegu, heldur en að læra hana utanbókar. Það er vissulega mikilvægt að hafa hraðan og öruggan aðgang í huganum að margföldunarstaðreyndum innan $10  \times 10$-töflunnar. Ef þú hefur hana ekki á þokkalegu valdi þínu verður erfitt að fylgjast með og halda áfram stærðfræðinámi vegna þess að til að skilja þáttun þarftu að þekkja þáttun einhverra talna (segjum talna $<100$). Ef þú sérð töluna $24$ og veist ekki (nánast sjálfvirkt) að $24 = 2 \cdot 12 = 3 \cdot 8 = 4 \cdot 6$ þá mun of mikil orka fara í að finna þetta út. Þetta þýðir ekki að besta leiðin til þess að festa margföldunartöfluna í minni sé að þylja hana utanbókar. Og það eru margar gagnlegar margföldunarstaðreyndir sem fólk öðlast ekki endilega vitund um þó að það kunni að þylja margföldunartöfluna, til dæmis:
+
+* $0 \cdot a = 0$
+* $1 \cdot a = a$
+* $ab = ba$
+* $a(bc)=a(bc)$ 
+* $2a$ endar á sléttri tölu
+* $5a$ endar á $5$ eða $0$, 
+* $ab = 2a \cdot \frac{1}{2}b$,
+* $a(b+c) = ab + bc$.
+
+Þriðja togstreitan sem vert er að nefna hér er á milli þess að hreyfa kennsluna áfram með nýju efni og þess að rifja upp og skoða aftur eldra efni. Það þarf hvoru tveggja: hreyfingu áfram og nýtt efni en líka endurlit, upprifjun og að skoða aftur eldra efni í nýju ljósi (í ljósi nýrrar þekkingar).
+
+## Hvað virkar ekki {#virkar-ekki}
+
+Það er hægt að útfæra stærðfræðikennslu með ólíkum hætti. Ef rökrænt samhengi greinarinnar verður nemendum ljóst, með meiri áherslu á hugtök en aðferðir og þeir takast á við krefjandi verkefni um alhæfingar og röksemdir þá skiptir minna máli hvernig kennsluaðferðir eru notaðar. 
+
+Hér eru nokkrar leiðir sem gefast yfirleitt ekki vel: 
+
+* Ofuráhersla á *form* - tiltekin orð og rithátt.
+* Að samþykkja ekki svör sem ekki hafa verið einfölduð eða sett á „rétt form“.
+* Að læra utanbókar án skilnings.
+* Ég útskýri og svo æfið þið ykkur á dæmum.
+* Opnið bókina, skoðið skýringar og sýnidæmi og hermið eftir þeim.
+* Hér er nýtt verkefni (sem ekki hefur verið útskýrt) og nú finnið þið út úr því án samræðu eða nokkurs inngrips kennara.
+
+Þó geta verið tilteknar aðstæður þar sem þessir hlutir koma að gagni.  
+
+## Að festa í sessi (e. institutionalization) {#festa-sessi}
+
+Fæst fólk getur bæði tekið glósur og hugsað (um stærðfræði) samtímis. Megnið af tíma kennslustundar ætti að fara í það að nemendur leysi verkefni. 
+
+Eftir að nemendur hafa glímt við verkefni er mikilvægt að taka saman lærdóminn, **að festa í sessi** það sem nemendur eiga að taka með sér úr tímanum og tengja við stærðfræði sem fræðigrein, tungumál stærðfræðinnar, hefðbundin tákn og orð yfir hlutina og leiðir til þess að sannreyna og staðfesta niðurstöður. 
+
+Þá getur kennarinn líka *sagt nemendum* hvað þau eiga að skrifa (glósa). 
+
+Í lokasamantektinni þarf kennari að 
+
+* Draga fram lykilhugtökin skýrt og greinilega.
+* Skýra hvað sé mikilvægast og þess virði að muna og skrifa.
+* Að hjálpa nemendum að tengja nýja efnið við fyrra efni og annað efni. 
+* Að sýna hefðbundna táknun og orð. 
+
+Þessi samantekt er samræða kennarans við allan bekkinn en hún *byggir á vinnu nemenda*. Þess vegna er ekki hægt að útfæra þessa samantekt í tilbúnum fyrirlestri. Nokkrar rannsóknir benda til þess að stærðfræðikennarar á Íslandi mættu huga betur að samantektum af þessu tagi [@oskarsdottir2014] [@savola2008] þar sem kennarinn talar við allan bekkinn saman.  
+

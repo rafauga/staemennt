@@ -1,0 +1,66 @@
+# Nokkrar túlkanir á brotum og sambreytni {#brot-hlutfoll}
+
+Við notum brot og ræðar tölur til þess að skilja og leysa ýmiskonar verkefni. Stundum eru þessi fyrirbæri útskýrð með framsetningum eins og sneiðum af hring (pítsusneiðar), á talnalínu, sem jöfn skipting, endurtekinn frádráttur, og margt fleira. Vandinn er að engin ein „áþreifanleg“ framsetning gefur eðlilega merkingu fyrir allar hliðar hugtaksins. Til dæmis: ef brot táknar hluta af pítsu, hvernig útskýrum við margföldun tveggja brota (án þess að skipta um túlkun á því hvað brot er)? 
+Hér eru tekin saman nokkur sjónarhorn eða túlkanir á brotum:
+
+a. **Hluti-heild** (part-whole): Hugtakið hluti-heild á við um aðstæður þegar einhverri heild er skipt í jafnstóra hluta. Þannig táknar brotið samanburð milli fjölda hluta og heildarfjölda hluta sem stærðinni var skipt í. Í þessu tilfelli verður teljarinn alltaf minni tala en nefnarinn. Til dæmis gætum við skipt köku (heildinni) í fjóra jafna hluta, og táknum þrjá af þessum hlutum í samanburði við heildina með brotinu $\frac{3}{4}$. 
+a. **Mæling** (measure): Sem mæling táknar brot mælingu út frá einhverju bili sem táknar einingu. Nánar tiltekið þá er einhver tiltekin lengd ákvörðuð sem eining, og við skilgreinum einingarbrotið $\frac{1}{a}$ með því að skipta bilinu frá tilteknum upphafspunkti í $a$ jafna búta. Þá táknar til dæmis $\frac{3}{4}$ lengdina sem fæst með því að leggja saman þrjú bil af lengdinni $\frac{1}{4}$ frá upphafspunkti. Lengdin er sú sama og fæst með því að skoða endapunkt samanlagða bilsins á talnalínunni ef farið var í jákvæða átt.
+a. **Virki/aðgerð** (operator): Við notum brotið til þess að umbreyta annarri stærð. Við margföldum með brotinu, og þannig getum við stríkkað („teygt á“ eða „dregið saman“) samfellda stærð eða „fjölfaldað“ (eða „dregið úr fjölda“) strjálar stærðir. Þetta er til dæmis hugmyndin þegar við reiknum „þrjá fjórðu af heildinni“ með því að margfalda heildina með þremur fjórðu. Til dæmis $\frac{3}{4} \cdot 20$ til að finna þrjá fjórðu af 20. Til að nýta sér þessa túlkun þurfum við að geta litið á $\frac{3}{4}$ sem bæði þrisvar sinnum $\frac{1}{4}$ af heildinni og sem $\frac{1}{4}$ af þrefaldri heildinni.
+a. **Kvóti** (quotient): Við túlkum ræða tölu sem kvóta þegar við hugsum um hana sem útkomu úr deilingu. Þá er $\frac{3}{4}$ talan sem fæst þegar við deilum 3 með 4 og er sá hluti sem einn einstaklingur fær ef 3 hlutum er skipt jafnt milli 4 einstaklinga. Eitt sem er ólíkt hluta-heild túlkuninni er að hér getur teljarinn verið stærri tala en nefnarinn og við getum notað neikvæðar tölur og einnig að við getum hugsað okkur að teljari og nefnari tákni ólíka hluti.
+a. **Stærðarhlutfall** (ratio): Hér er átt við það að bera saman tvær stærðir, þannig að brotið stendur fyrir samband milli stærða. Til dæmis þegar appelsínudjús er blandaður í hlutföllum milli þykknis og vatns. Þá er mikilvægt að hafa á hreinu hver einingin er. (Til dæmis er hægt að tákna með $\frac{3}{4}$ að það séu 3 hlutar þykknis á móti 4 hlutum vatns, en líka er hægt að segja hluti eins og hlutfall þykknis sé $\frac{3}{4}$ af blöndunni.) Almennt táknar $\frac{3}{4}$ hlutfallið sem lýsir því ef 3 mælieiningar (eða hlutir) af einni gerð eru á hverja 4 mælieiningar (eða hluti) af sömu eða annarri gerð, t.d. 3 lítrar af málningu á hverja 4 fermetra, 2 lauf á hverjar 5 lirfur, ... 
+a. **Hlutfall** sem lýsir stærð á hverja viðmiðunareiningu (rate): $\frac{3}{4}$ er hraðinn (í km/klst) ef þú ferð $\frac{3}{4}$ km á 1 klst. Oft er viðmiðunareiningin tími og oft eru ekki notuð brot, til dæmis púlsinn er 65 slög (á mínútu) og stundum eru notuð tugabrot, til dæmis eru vextir 7.5% (á ári). Þetta er til dæmis túlkun á hallatölu línu, $y$-breyting á hverja einingarviðbót á $x$.
+a. **Tala** (number): ræð tala sem hefur ákveðna staðsetningu á talnalínunni: $\frac{3}{4}$ er talan sem margfölduð með 4 gefur útkomuna 3.
+
+Við þetta má svo bæta stærðfræðilegri túlkun fyrir lesendur sem hafa lært um abstrakt algebru: Gerum ráð fyrir að við höfum mengi talna sem inniheldur margföldunarhlutleysuna $1$ og mengið er þannig að sérhver tala í menginu (nema $0$, ef $0$ tilheyrir menginu) eigi sér margföldunarandhverfu í menginu. Þá getum við litið svo á að $\frac{a}{b}$ tákni $a\cdot b^{-1}$, svo brotið $\frac{a}{b}$ er margfeldi staksins $a$ og margföldunarandhverfu staksins $b$. Önnur leið til að segja það sama er að brotið $\frac{a}{b}$ sé tala, $x$, sem leysir jöfnuna $bx=a$. Hér þarf að bæta því við að mörg pör af tölum geta táknað „sama brotið“: brotin $\frac{a}{b}$ og $\frac{c}{d}$ eru jafngild ef og aðeins ef $ad=bc$. Við sjáum til dæmis að bæði $\frac{3}{4}$ og $\frac{9}{12}$ leysa jöfnuna $4x=3$. 
+
+## Sambreytni og óbreytni {#sambreytni-obreytni}
+
+Þegar tvær breytistærðir tengjast og breytast saman eftir einhverri reglu er hægt að tala um **sambreytni**. Þetta samband er til dæmis tjáð með einhverju falli, $y=f(x)$ eða einhverri jöfnu sem lýsir sambandi stærðanna. Þegar um að ræða eitthvert slíkt samband er eitthvað sem breytist ekki, nefnilega reglan sjálf, fallið, eða einhverjar fastar stærðir í jöfnunni. Við getum nefnt þær stærðir **óbreytur**. 
+
+### Rétt hlutfall {#rett-hlutfall}
+
+Mikilvægt dæmi um sambreytni á grunnskólastigi eru stærðir sem eru **í réttu hlutfalli** hvor við aðra. Dæmi um það kemur fram í forsendum verkefna eins og eftirfarandi.
+
+> Tvær lirfur þurfa fimm laufblöð á dag til lifa. 
+
+Hvers konar spurninga er hægt að spyrja út frá þessari forsendu? Hvað er það sem breytist ekki? Takið tíma í að finna dæmi áður en lengra er haldið, og leiðir til að svara þeim. 
+
+Verkefnið getur verið um spurningar eins og: 
+
+* Hve mörg laufblöð á dag þurfa 12 lirfur?
+* Hve margar lirfur geta lifað á 15 (eða jafnvel 17) laufblöðum á dag?
+* Hve lengi lifa tvær lirfur á 100 laufblöðum?
+* Hvað þarf mörg laufblöð til að tvær þrjár lirfur lifi í 30 daga?
+
+Það sem breytist ekki er hlutfallið milli fjölda laufblaða og fjölda lirfa (eða öfuga hlutfallið), sem er alltaf $\frac{5}{2}$. Ef $x$ táknar fjölda lirfa og $y$ táknar fjölda laufblaða þá tengjast $x$ og $y$ með jöfnunni $\frac{y}{x}=\frac{5}{2}$, eða $y=\frac{5}{2}x$. Það er óbreytan í verkefninu.
+
+Almennt segjum við að tvær stærðir, $x$ og $y$, séu í réttu hlutfalli hvor við aðra ef $\frac{y}{x}$ er fasti, sem kallast þá hlutfallsfasti eða hlutfallsstuðull. Í dæminu hér er þetta talan $\frac{5}{2}$. 
+
+Þegar við hugsum og drögum ályktanir um fullyrðingar eins og 
+
+* Ef $x$ tvöfaldast, þá ... 
+* Ef $y$ tvöfaldast, þá ...
+* Ef $x$ helmingast, þá ...
+* Ef $y$ $n$-faldast, þá ...
+
+þá erum við að fást við sambreytni: skoðum hvernig breyting á gildi einnar stærðar breytir gildinu á hinni stærðinni. 
+
+Að sjálfsögðu geta stærðir tengst á annan hátt en með réttu hlutfalli. Þrenns konar tengsl þar sem hægt er að fást við sambreytni og koma við sögu í grunnskóla eru (notum $x$ og $y$): 
+
+* Rétt hlutfall: $\frac{y}{x}$ er fasti, eða $y = kx$ þar sem $k$ er fasti.
+* Öfugt hlutfall: $x \cdot y$ er fasti, eða $y = \frac{k}{x}$ þar sem $k$ er fasti.  
+* Fastur mismunur: $x - y$ er fasti, eða $y = x - k$ þar sem $k$ er fasti.
+
+### Verkefni um sambreytni {#verkefni-sambreytni}
+
+a. Látum $x$ og $y$ vera í réttu hlutfalli hvor við aðra, $\frac{y}{x}=30$. Hvernig breytist $y$ ef $x$ þrefaldast. Hvernig breytist $y$ ef $x$ hækkar um $10\%$?
+a. Látum $x$ og $y$ vera í öfugu hlutfalli hvor við aðra, $x \cdot y=30$. Hvernig breytist $y$ ef $x$ þrefaldast? Hvernig breytist $y$ ef $x$ hækkar um $10\%$?  
+a. Látum $x$ og $y$ vera með fastan mismun, $x - y = 30$. Hvernig breytist $y$ ef $x$ þrefaldast? Hvernig breytist $y$ ef $x$ hækkar um $10\%$?  
+
+### Bein upplifun af kvikri sambreytni {#ggb-sambreytni_1}
+
+Stærðfræðiforrit eins og GeoGebra geta verið leið til að nemendur skynji kvika sambreytni. Það þýðir að sjá hvernig breyting á einni stærð hefur áhrif á aðra stærð, um leið. Hér hefur GeoGebruforrit verið fellt inn í textann, og verkefnið er að finna út og setja fram með nákvæmum hætti, hvernig punktarnir eru háðir og hvernig breyting á staðsetningu eins punktar breytir staðsetningu annars punktar. 
+
+<iframe scrolling="no" title="Samhnik 1 - spurningar" src="https://www.geogebra.org/material/iframe/id/q5dYSKxM/width/270/height/225/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/false/ctl/false" width="270px" height="225px" style="border:0px;"> </iframe>
+
+

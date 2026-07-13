@@ -1,0 +1,15 @@
+# Undrun {#undrun}
+
+Eins og stærðfræðingar lýsa sinni grein er stærðfræðiiðkun lifandi og skapandi ferli þar sem sannanir eru í fyrirrúmi [@polya1990; @su2020]. Movshovits-Hadar [@movshovits-hadar1988] útskýrir hvernig sérhver setning (það er stærðfræðiregla, e. theorem) í námsefni skólanna (ef til vill með örfáum undantekningum) eigi rót sína að rekja til undrunar: ef ekkert hefði einhvern tíma verið óvænt við einhverja setningu hefði stærðfræðingurinn sem uppgötvaði hana varla haft fyrir því að setja hana fram, enginn hefði haft áhuga á henni og setningin hefði ekki ratað inn í námsefni skóla um allan heim. Movshovits-Hadar [@movshovits-hadar1988] telur, eins og Lockhart að í kennslubókum sé iðulega búið að loka á möguleika nemenda til þess að upplifa nokkra undrun eða tilfinningar gagnvart efninu – hið lifandi ferli hafi verið drepið og bútað niður í mola af dauðum staðreyndum. Ef fólk umgengst stærðfræði eins og safn af tilbúnum þekkingaratriðum og reikniaðferðum til þess að leggja á minnið án þess að reyna að skilja rökin að baki þeim, eða þá upplifa þá undrun sem felst í þeim, væri það í andstöðu við gildi fræðigreinarinnar og bæri ekki vott um umhyggju fyrir stærðfræði.
+
+Eitt af því sem gerir stærðfræðiiðkun ánægjulega er vitsmunaleg áreynsla. Ef hún væri ekki krefjandi væri litla nautn að hafa af henni. Raunar má segja um allar námsgreinar að þær séu verðugar sem skólagreinar því aðeins að í þeim felist meira en það sem blasir við án frekari athugana og heilabrota. Fræði og vísindi eru tilraun til að skynja og skilja heiminn betur. Ef stærðfræði væri ekkert annað en sjálfsagðir hlutir væri lítil ástæða til að kenna hana í skólum.
+
+## Dæmi: Pýþagóras {#pythagoras}
+
+Regla Pýþagórasar er á vissan hátt merkilegasta regla sem kynnt er nemendum á grunnskólastigi. Það fer þó auðvitað eftir því hvað við köllum merkilegt. Eitt af því sem við getum kallað merkilegt er að regla Pýþagórasar blasir alls ekki við. Ekkert segir auganu að hún hljóti að vera rétt og ekki einu sinni að hún sé líkleg. Til þess þarf nánari skoðun. Annað sem er merkilegt er að við nánari skoðun og hugsun er hægt að komast að henni og sanna hana. Ein tilraun til að láta reglu Pýþagórasar birtast fyrir fólki er að láta það fikta í eftirfarandi kvikri framsetningu: 
+
+<iframe scrolling="no" title="Pýþagóras sem ótraust teikning" src="https://www.geogebra.org/material/iframe/id/bmj2b3ba/width/500/height/524/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="500px" height="524px" style="border:0px;"> </iframe>
+
+Þarna er ekki um neina sönnun að ræða, heldur bara verkefni af gerðinni „hverju tekurðu eftir“, og við getum tekið eftir því að þegar þríhyrningur hefur rétt horn er tiltekin regla á sambandi flatarmála þeirra ferninga sem reistir eru á hliðum þríhyrningsins. Við getum undrast yfir því að samanlagt flatarmál minni ferninganna er nákvæmlega jafnt flatarmáli stærsta ferningsins. Er það alltaf þannig? Hvers vegna?
+
+
