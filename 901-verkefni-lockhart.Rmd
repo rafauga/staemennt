@@ -1,4 +1,4 @@
-# Sorgarsöngur stærðfræðings {#algebra-samhverfa}
+# Sorgarsöngur stærðfræðings {#sorgarsongur}
 
 Í þessum kafla er unnið með og út frá grein Paul Lockhart, [A Mathematician’s Lament](https://archive.org/details/AMathematiciansLament). Lockhart er stærðfræðingur og var (eða er) stærðfræðikennari í bandarískum „high school“ (nemendur á aldrinum 14-18 ára). Hann hefur gefið út nokkrar bækur eftir að textinn hans sem hér er rædd kom fyrst út. Textinn var skrifaður 2002 og gekk manna á milli þangað til að hann birtist opinberlega á netinu 2008. 
 
@@ -64,7 +64,7 @@ Við vitum til dæmis að mengi lausna breytist ekki þó að við bætum (sömu
 
 ```{exercise, exr-verkefni-kennsluefni-lockhart, name="Samanburður kennsluefnis"}
 
-Skoðið eftirfarandi tvö inngangsverkefni um jöfnur og lausnir þeirra úr tveimur ólíkum kennslubókum (A og B). Berið nálganirnar saman. Er önnur þeirra í anda „hér er aðferðin, nú notið þið hana“? Er eitthvað að segja um breytileika (samhverfur) í annarri hvorri eða báðum?
+Skoðið eftirfarandi tvö inngangsverkefni um jöfnur og lausnir þeirra úr tveimur ólíkum kennslubókum (Skala og Almennri stærðfræði). Berið nálganirnar saman. Er önnur þeirra í anda „hér er aðferðin, nú notið þið hana“? Er eitthvað að segja um breytileika (samhverfur) í annarri hvorri eða báðum?
 ```
 
 ```{r fig-stika-jafna, echo=FALSE, fig.cap="Verkefni A (Stika 3b)", out.width='60%', fig.align='center'}
@@ -104,11 +104,9 @@ Spurningin er hvort hægt er að segja eitthvað um stærð hornsins ef C út fr
 
 Þegar við höfum velt þessu fyrir okkur og prófað og pælt er hægt að kynna reglu Þalesar: Segjum að ABC sé þríhyrningur þar sem AB er miðstrengur hrings. Ef C er á hringferlinum þá er C rétt horn. Og einnig gildir reglan í hina áttina: Ef C er rétt horn liggur C á hringferlinum. En stærðfræðin spyr: Hvers vegna? Hvernig vitum við að það er satt?
 
-Lockhart sýnir sönnun úr kennslubók. Svo er sýnd lausn nemanda í 7. bekk.
-
 ```{exercise, exr-thales-geogebra, name="Regla Þalesar með kviku rúmfræðiforriti"}
 
-1. Setjið ykkur inn í báðar sannanirnar. Berið þær saman. Notar önnur hvor þeirra (eða báðar) samhverfu: eitthvað sem breytist ekki við einhverja aðgerð? Finnst ykkur önnur hvor fallegri, sniðugri, gagnlegri eða meira sannfærandi?
-2. Skoðið umfjöllun um reglu Þalesar í Skala 2b, bls. 29-30. Hvernig kemur hún út í samanburði?
-3. Hver er tilgangurinn með því að hafa þessa reglu í kennslubókinni, með hliðsjón af markmiðakafla aðalnámskrár, og með hliðsjón af stærðfræði sem „listinni að útskýra“ eða „ævintýri“ (hvoru tveggja nefnt hjá Lockhart) eða stærðfræði sem gagnlegu tæki, mikilvægu fyrir störf og efnahag?
+a. Lockhart sýnir sönnun úr kennslubók. Svo er sýnd lausn nemanda í 7. bekk. Setjið ykkur inn í báðar sannanirnar. Berið þær saman. Notar önnur hvor þeirra (eða báðar) samhverfu: eitthvað sem breytist ekki við einhverja aðgerð? Finnst ykkur önnur hvor fallegri, sniðugri, gagnlegri eða meira sannfærandi?
+a. Skoðið umfjöllun um reglu Þalesar í Skala 2b, bls. 29-30. Hvernig kemur hún út í samanburði?
+a. Hver er tilgangurinn með því að hafa þessa reglu í kennslubókinni, með hliðsjón af markmiðakafla aðalnámskrár, og með hliðsjón af stærðfræði sem „listinni að útskýra“ eða „ævintýri“ (hvoru tveggja nefnt hjá Lockhart) eða stærðfræði sem gagnlegu tæki, mikilvægu fyrir störf og efnahag?
 ```

@@ -61,7 +61,7 @@ hvernig-stae
 hvad-stae
 stae-thinum-huga
 staemennt-statements
-algebra-samhverfa
+sorgarsongur
 algebra-daglegt-lif
 namskra-lockhart
 samhverfur
