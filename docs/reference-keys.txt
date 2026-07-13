@@ -62,7 +62,6 @@ thales-geogebra
 naudsyn_venjur
 abitrary-necessary
 forsendur-staemenntunar
-af-hverju-stae
 thinar-astaedur
 hvernig-stae
 hvad-stae

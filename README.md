@@ -1,6 +1,6 @@
 Velkomin  
 
-Bókina má skoða á https://rafauga.github.io/st_grunnskola/
+Bókina má skoða á https://rafauga.github.io/staemennt/
 
 Hún er búin til með R Markdown og **bookdown** (https://github.com/rstudio/bookdown). 
 

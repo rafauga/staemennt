@@ -7,7 +7,7 @@ bookdown::bs4_book:
         <li><a href="./">Nótur um stærðfræðimenntun</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/rafauga/st_grunnskola/edit/BRANCH/%s
+    edit: https://github.com/rafauga/staemennt/edit/BRANCH/%s
    # download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:

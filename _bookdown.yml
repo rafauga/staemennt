@@ -1,6 +1,6 @@
 delete_merged_file: true
 output_dir: "docs"
-book_filename: "st_grunnskola"
+book_filename: "staemennt"
 language:
   ui:
     chapter_name: "Kafli "
