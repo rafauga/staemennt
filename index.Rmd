@@ -25,7 +25,7 @@ source("R/figures.R")
 
 # Um textann {#umtextann}
 
-Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám (frekar en kerfis- eða félagsfræðilega sýn). Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, *There Is No One Way to Teach Math* [@picciotto2025] til hliðsjónar því þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle. 
+Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám, en þó verður líka eitthvað um hlutverk stærðfræði í samfélaginu og menntakerfinu. Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, *There Is No One Way to Teach Math* [@picciotto2025] til hliðsjónar því það er víða vísað í hana og þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle. 
 
 Í textanum er áherslan á undirstöðuhugtök og hagnýtar leiðir í kennslu, auk rýni í stærðfræðilegt efni grunnskóla og stundum í efni framhaldsskóla. Gengið er út frá því að lesendur vinni bæði saman og með kennara, en áhugasamar manneskjur utan slíks samhengis gætu ef til vill nýtt sér textann líka.
 

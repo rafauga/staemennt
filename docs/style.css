@@ -172,3 +172,16 @@ blockquote p {
 
   line-height: 1.7;
 }
+
+.exercise > p > span.exercise {
+display: block;
+margin-bottom: 0.5em;
+}
+
+.exercise ol {
+list-style-type: lower-alpha;
+}
+
+.exercise ol li::marker {
+content: "(" counter(list-item, lower-alpha) ") ";
+}

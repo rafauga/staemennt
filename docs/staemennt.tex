@@ -92,6 +92,23 @@
 \author{Ingólfur Gíslason}
 \date{2026-07-13}
 
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Verkefni}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
 \begin{document}
 \maketitle
 
@@ -101,7 +118,7 @@
 }
 \chapter{Um textann}\label{umtextann}
 
-Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám (frekar en kerfis- eða félagsfræðilega sýn). Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, \emph{There Is No One Way to Teach Math} \autocite{picciotto2025} til hliðsjónar því þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle.
+Þessi texti er verk í vinnslu. Hann er um stærðfræðimenntun, einkum kennslu og nám, en þó verður líka eitthvað um hlutverk stærðfræði í samfélaginu og menntakerfinu. Hún er meðal annars hugsuð sem kennsluefni í námskeiðum um stærðfræðikennslu og -nám við Menntavísindasvið Háskóla Íslands. Hún gæti þó nýst nemendum í öðrum námskeiðum og starfandi kennurum. Mælt er með því að lesendur hafi bók Henri Picciotto og Robin Pemantle, \emph{There Is No One Way to Teach Math} \autocite{picciotto2025} til hliðsjónar því það er víða vísað í hana og þessi texti á meðal annars að þjóna sem stuðningur og dýpkun við lestur og notkun þeirrar bókar. Marga kafla er þó óhætt að lesa sjálfstætt frá bók Picciotto og Pemantle.
 
 Í textanum er áherslan á undirstöðuhugtök og hagnýtar leiðir í kennslu, auk rýni í stærðfræðilegt efni grunnskóla og stundum í efni framhaldsskóla. Gengið er út frá því að lesendur vinni bæði saman og með kennara, en áhugasamar manneskjur utan slíks samhengis gætu ef til vill nýtt sér textann líka.
 
@@ -915,115 +932,6 @@ Regla Pýþagórasar er á vissan hátt merkilegasta regla sem kynnt er nemendum
 
 Þarna er ekki um neina sönnun að ræða, heldur bara verkefni af gerðinni „hverju tekurðu eftir``, og við getum tekið eftir því að þegar þríhyrningur hefur rétt horn er tiltekin regla á sambandi flatarmála þeirra ferninga sem reistir eru á hliðum þríhyrningsins. Við getum undrast yfir því að samanlagt flatarmál minni ferninganna er nákvæmlega jafnt flatarmáli stærsta ferningsins. Er það alltaf þannig? Hvers vegna?
 
-\chapter{Sorgarsöngur stærðfræðings}\label{algebra-samhverfa}
-
-Hér eru nokkrir hlutir til að hugleiða í samhengi við lestur greinar Paul Lockhart, \href{https://archive.org/details/AMathematiciansLament}{A Mathematician's Lament}.
-
-\section{Algebra og daglegt líf}\label{algebra-og-daglegt-luxedf}
-
-Á blaðsíðu 8 í \emph{A Mathematician's Lament} eftir Paul Lockhart stendur að algebra snúist ekki um daglegt líf, heldur tölur og samhverfur. Svo setur hann fyrir spurningu sem hann segir einfalda og fallega:
-
-\begin{quote}
-Segjum að ég fái gefna summu og mismun tveggja talna. Hvernig finn ég út hverjar tölurnar eru?
-\end{quote}
-
-\subsection{Verkefni: Summa og mismunur}\label{verkefni-summa-mismunur}
-
-Leysið þetta verkefni. Ef þið hafið leyst það með bókstafareikningi skulið þið næst leysa það með því að skoða verkefnið á talnalínu (gerið ráð fyrir að allar tölur séu jákvæðar).
-
-Vísbending
-
-Gerið strik sem táknar summu, til dæmis \(A+B\). Merkið svo inn stað fyrir \(A-B\). Næst hugsið þið um það hvar þið merkið inn stað fyrir \(A\). Það er hægt að segja nákvæmlega hvar á strikinu, út frá því sem búið er að gera, hvar \(A\) er.
-
-\section{Samhverfur (breytileiki)}\label{samhverfur}
-
-Orðið samhverfa (symmetry) er notað í daglegu máli (og í stærðfræði) til að lýsa einhverju sem er eins og spegilmynd um einhverja speglunarlínu eða mynd sem hægt væri að snúa þannig að hún félli aftur ofan í sjálfa sig. Í stærðfræði er til aðeins almennari hugmynd um samhverfu sem Lockhart vísar í með orðinu \emph{symmetry}. Samhverfa er þá almennt \textbf{eiginleiki stærðfræðilegs hlutar sem breytist ekki ef einhverri tiltekinni aðgerð er beitt á hann}. Við lítum til dæmis svo á að ef við speglum, færum eða snúum rúmfræðilegum hlut sé hann áfram eins því að rúmfræðilegir eiginleikar hans (fjarlægðir og horn) hafa ekkert breyst. Eitt dæmi úr rúmfræði er að hringur breytist ekki þó að honum sé snúið (eiginleiki punktamengisins að vera hringur með sama geisla breytist ekki). Dæmi úr annarri átt væri að þegar við leggjum saman tölur þá breytist útkoman ekki þó að við breytum röð liðanna, \(5+3=3+5\). Samlagning hefur því samhverfu: útkoman breytist ekki við þá aðgerð að víxla liðunum. Við getum líka einfaldlega talað um að eitthvað haldist óbreytt við einhverja aðgerð eða að eitthvað sé \emph{óbreyta} (e. invariant). Það er líka hægt að tala um þetta út frá hugtökunum \emph{breytileika}, \emph{breytileikavídd} og \emph{breytileikamörk}, sjá kafla \ref{breytileiki}.
-
-\subsection{Hvaða aðgerðir breyta ekki lausnum jafna}\label{samhverfur-jafna}
-
-Finnum samhverfuaðgerðir (eins margar og við getum) í verkefninu um summu og mismun hér að ofan, sem sagt: aðgerðir sem breyta ekki lausnamengi verkefnisins um summu og mismun.
-
-Vísbending 1
-
-Hvaða aðgerðir þekkið þið sem má framkvæma á jöfnu þannig að hún haldi áfram að hafa sömu lausnir?
-
-Vísbending 2
-
-Við vitum til dæmis að mengi lausna breytist ekki þó að við bætum (sömu) tölu við báðum megin jafnaðarmerkisins. Við megum líka víxla liðum í summum og við megum líka víxla á hliðum jöfnunnar, þ.e. \(A=B\) er jafngilt \(B=A\). Það er líka hægt að breyta táknunum, jöfnuhneppið \(x+y=S\) og \(x-y=M\) er jafngilt jöfnuhneppinu \(a+b=c\) og \(a-b=d\). En hér er aukaspurning: við vitum: ef \(x=y\) þá er líka \(x^2=y^2\). Samt er aðgerðin „að hefja báðar hliðar í annað veldi`` ekki samhverfa -- af hverju ekki?
-
-\section{Námskrá}\label{namskra-lockhart}
-
-Skoðið textann um stærðfræði í \url{https://www.adalnamskra.is/grunnskoli/kafli-25-staerdfraedi-2024}.
-
-\subsection{Verkefni: Aðalnámskrá út frá Lockhart}\label{verkefni-namskra-lockhart}
-
-Finnið fullyrðingu í námskránnni um stærðfræði sem Lockhart væri sammála og fullyrðingu sem Lockhart væri ósammála.
-
-\section{Kennsluefni um jöfnur}\label{kennsluefni-jofnur}
-
-Í textanum gefur Lockhart dæmi þar sem nemendum er einfaldlega sagt: „hér er aðferðin, nú notið þið hana``. Dæmi á bls. 5 er eftirfarandi:
-
-\begin{quote}
-``The area of a triangle is equal to one-half its base times its height.'' Students are asked to memorize this formula and then ``apply'' it over and over in the ``exercises.'' Gone is the thrill, the joy, even the pain and frustration of the creative act. There is not even a problem anymore. The question has been asked and answered at the same time---there is nothing left for the student to do.
-\end{quote}
-
-\subsection{Verkefni: Samanburður kennsluefnis um jöfnur}\label{verkefni-kennsluefni-lockhart}
-
-Skoðið eftirfarandi tvö inngangsverkefni um jöfnur og lausnir þeirra úr tveimur ólíkum kennslubókum (A og B). Berið nálganirnar saman. Er önnur þeirra í anda „hér er aðferðin, nú notið þið hana``? Er eitthvað að segja um breytileika (samhverfur) í annarri hvorri eða báðum?
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.6\linewidth]{images/Stika_jafna} 
-
-}
-
-\caption{Verkefni A (Stika 3b)}\label{fig:fig-stika-jafna}
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{images/Almenn_stae_jofnur} 
-
-}
-
-\caption{Verkefni B (Almenn stærðfræði I)}\label{fig:fig-almenn-stae-jofnur}
-\end{figure}
-
-\section{Dæmi Regla Þalesar}\label{lockhart-thales}
-
-Regla Þalesar er undrunarefni (sjá kafla \ref{undrun}) eins og aðrar reglur í stærðfræði. Í grein Lockharts er fjallað um reglu Þalesar á blaðsíðum 20-22.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.6\linewidth]{images/Thales-teikn} 
-
-}
-
-\caption{Þríhyrningur (Regla Þalesar)}\label{fig:fig-Thales-teikn}
-\end{figure}
-
-Hann gefur okkur mynd af þríhyrningi innan í hálfhring. Það er alls ekki ljóst að hornið sem myndast við punktinn á boganum sé rétt horn. Og ætti hornið ekki að breytast ef punkturinn færist?
-
-Hana má kynna á mismunandi vegu og hér verða gefnar nokkrar hugmyndir:
-
-\subsection{Regla Þalesar með pappír og blýanti (eða í huganum)}\label{thales-pappir}
-
-Teiknið eða sjáið fyrir ykkur hálfhring. Hálfhring er hægt að búa til með því að gera fyrst hring og draga svo miðstreng, sem er strik gegnum miðju hringsins með báða endapunkta á hringferlinum. Teiknið svo eða sjáið fyrir ykkur punkt á boganum og strik frá þessum punkti að endapunktum miðstrengsins. Hve stórt er hornið sem myndast milli þessara tveggja strika?
-
-\subsection{Regla Þalesar með kviku rúmfræðiforriti}\label{thales-geogebra}
-
-Á myndinni er hálfhringur (brotin ferill) og miðþverill hans milli tveggja punkta. Á myndinni er einnig frjáls punktur, C, og mælitala hornsins sem myndast milli strikanna frá endapunktum miðstrengsins og C.
-
-Spurningin er hvort hægt er að segja eitthvað um stærð hornsins ef C út frá því hvort punkturinn er fyrir utan, fyrir innan eða lendir nákvæmlega á hringboganum.
-
-Þegar við höfum velt þessu fyrir okkur og prófað og pælt er hægt að kynna reglu Þalesar: Segjum að ABC sé þríhyrningur þar sem AB er miðstrengur hrings. Ef C er á hringferlinum þá er C rétt horn. Og einnig gildir reglan í hina áttina: Ef C er rétt horn liggur C á hringferlinum. En stærðfræðin spyr: Hvers vegna? Hvernig vitum við að það er satt?
-
-Lockhart sýnir sönnun úr kennslubók. Svo er sýnd lausn nemanda í 7. bekk. Setjið ykkur inn í báðar sannanirnar. Berið þær saman. Notar önnur hvor þeirra (eða báðar) samhverfu: eitthvað sem breytist ekki við einhverja aðgerð? Finnst ykkur önnur hvor fallegri, sniðugri, gagnlegri eða meira sannfærandi?
-
-Skoðið umfjöllun um reglu Þalesar í Skala 2b, bls. 29-30. Hvernig kemur hún út í samanburði?
-
-Að lokum spyrjum við: Hver er tilgangurinn með því að hafa þessa reglu í kennslubókinni, með hliðsjón af markmiðakafla aðalnámskrár, og með hliðsjón af stærðfræði sem „listinni að útskýra`` eða „ævintýri`` (hvoru tveggja nefnt hjá Lockhart) eða stærðfræði sem gagnlegu tæki, mikilvægu fyrir störf og efnahag?
-
 \chapter{Um nauðynleg sannindi og tilfallandi sannindi}\label{naudsyn_venjur}
 
 Sumt í stærðfræði er þannig vegna þess að það getur ekki verið öðruvísi. Annað er eins og það er vegna hefðar og samkomulags.
@@ -1144,6 +1052,127 @@ Stærðfræðimenntun hefur verið til sem sjálfstætt fræðasvið í um það
 \begin{quote}
 Stærðfræðimenntun er miklu flóknari heldur en þú bjóst við jafnvel þó að þú hafir búist við því að hún væri flóknari en þú bjóst við. (Ed Begle)
 \end{quote}
+
+\chapter{Sorgarsöngur stærðfræðings}\label{algebra-samhverfa}
+
+Í þessum kafla er unnið með og út frá grein Paul Lockhart, \href{https://archive.org/details/AMathematiciansLament}{A Mathematician's Lament}. Lockhart er stærðfræðingur og var (eða er) stærðfræðikennari í bandarískum „high school`` (nemendur á aldrinum 14-18 ára). Hann hefur gefið út nokkrar bækur eftir að textinn hans sem hér er rædd kom fyrst út. Textinn var skrifaður 2002 og gekk manna á milli þangað til að hann birtist opinberlega á netinu 2008.
+
+Textinn Lockhart er ekki fræðigrein og er ekki byggður upp sem slík. Hún hefst til dæmis ekki á samantekt á þekktum niðurstöðum eða kenningum og segir ekki frá skipulagðri rannsókn. En hún er líklega aðallega skrifuð fyrir stærðfræðinga og þess vegna er víða vísað í sígildar stærðfræðilegar niðurstöður og röksemdafærslur og í sögu stærðfræði og vísinda. Það þarf töluverða stærðfræðiþekkingu til að skilja sum af þessum stærðfræðihugtökum. Dæmi um það eru hugtök eins og \emph{óræð tala} (e. irrational number), \emph{samhverfa} (e. symmetry), \emph{lengdarmál ferla} (e. measuring curves), \emph{tæmingaraðferð} (e. method of exhaustion), \emph{torræðni} \(\pi\) (e. the transcendence of \(\pi\).) Gott er fyrir lesandann að vera tilbúinn að fletta upp hugtökum á stöku stað og líka að nöfnum eins og Euclid (Evklíð með íslenskri ritun), Eudoxus, Archimedes (Arkímedes), Hardy, Pythagoras (Pýþagóras) til að sjá fyrir hvað þau nöfn standa. Sama á við um staðar, tíma- og atburðavísanir eins og í \emph{Mesopotamian tablet problems} eða \emph{the Renaissance algebraists}. Lestur greinarinnar er því upplagt tækifæri til þess að kynna sér örlítið um sögu stærðfræði og stærðfræðimenntunar en það er þó líklega hægt að takast á við megininntakið án mikillar fræðivinnu.
+
+\section{Algebra og daglegt líf}\label{algebra-daglegt-lif}
+
+Á blaðsíðu 8 í \emph{A Mathematician's Lament} stendur að algebra snúist ekki um daglegt líf, heldur tölur og samhverfur. Svo setur hann fyrir spurningu sem hann segir einfalda og fallega:
+
+\begin{quote}
+Segjum að ég fái gefna summu og mismun tveggja talna. Hvernig finn ég út hverjar tölurnar eru?
+\end{quote}
+
+\begin{exercise}[Summa og mismunur]
+\protect\hypertarget{exr:exr-summa-mismunur}{}\label{exr:exr-summa-mismunur}Leysið þetta verkefni. Ef þið hafið leyst það með bókstafareikningi skulið þið næst leysa það með því að skoða verkefnið á talnalínu (gerið ráð fyrir að allar tölur séu jákvæðar).
+\end{exercise}
+
+Vísbending
+
+Gerið strik sem táknar summu, til dæmis \(A+B\). Merkið svo inn stað fyrir \(A-B\). Næst hugsið þið um það hvar þið merkið inn stað fyrir \(A\). Það er hægt að segja nákvæmlega hvar á strikinu, út frá því sem búið er að gera, hvar \(A\) er.
+
+\section{Námskrá}\label{namskra-lockhart}
+
+Í námskrám ríkja koma yfirleitt fram réttlætingar á því að kennslugreinar eigi heima í námsefni skólanna. Í texta Lockharts koma fram nokkuð afdráttarlausar skoðanir á því hvað réttlæti stærðfræði í skólum og hvað réttlætir hana ekki.
+
+\begin{exercise}[Námskrá og Lockhart]
+\protect\hypertarget{exr:exr-verkefni-namskra-lockhart}{}\label{exr:exr-verkefni-namskra-lockhart}Skoðið textann um stærðfræði í \href{https://www.adalnamskra.is/grunnskoli/kafli-25-staerdfraedi-2024}{Aðalnámskrá grunnskóla}. Finnið fullyrðingu í námskránnni um stærðfræði sem Lockhart væri sammála og fullyrðingu sem Lockhart væri ósammála.
+\end{exercise}
+
+\section{Samhverfur og breytileiki}\label{samhverfur}
+
+Orðið samhverfa (symmetry) er notað í daglegu máli (og í stærðfræði) til að lýsa einhverju sem er eins og spegilmynd um einhverja speglunarlínu eða mynd sem hægt væri að snúa þannig að hún félli aftur ofan í sjálfa sig. Í stærðfræði er til aðeins almennari hugmynd um samhverfu sem Lockhart vísar í með orðinu \emph{symmetry}. Samhverfa er þá almennt \textbf{eiginleiki stærðfræðilegs hlutar sem breytist ekki ef einhverri tiltekinni aðgerð er beitt á hann}. Við lítum til dæmis svo á að ef við speglum, færum eða snúum rúmfræðilegum hlut sé hann áfram eins því að rúmfræðilegir eiginleikar hans (fjarlægðir og horn) hafa ekkert breyst. Eitt dæmi úr rúmfræði er að hringur breytist ekki þó að honum sé snúið (eiginleiki punktamengisins að vera hringur með sama geisla breytist ekki). Dæmi úr annarri átt væri að þegar við leggjum saman tölur þá breytist útkoman ekki þó að við breytum röð liðanna, \(5+3=3+5\). Samlagning hefur því samhverfu: útkoman breytist ekki við þá aðgerð að víxla liðunum. Við getum líka einfaldlega talað um að eitthvað haldist óbreytt við einhverja aðgerð eða að eitthvað sé \emph{óbreyta} (e. invariant). Það er líka hægt að tala um þetta út frá hugtökunum \emph{breytileika}, \emph{breytileikavídd} og \emph{breytileikamörk}, sjá kafla \ref{breytileiki}.
+
+\begin{exercise}[Aðgerðir sem breyta ekki lausnum jafna]
+\protect\hypertarget{exr:exr-samhverfur-jafna}{}\label{exr:exr-samhverfur-jafna}Finnum samhverfuaðgerðir (eins margar og við getum) í verkefninu um summu og mismun hér að ofan, sem sagt: aðgerðir sem breyta ekki lausnamengi verkefnisins um summu og mismun.
+\end{exercise}
+
+Vísbending 1
+
+Hvaða aðgerðir þekkið þið sem má framkvæma á jöfnu þannig að hún haldi áfram að hafa sömu lausnir?
+
+Vísbending 2
+
+Við vitum til dæmis að mengi lausna breytist ekki þó að við bætum (sömu) tölu við báðum megin jafnaðarmerkisins. Við megum líka víxla liðum í summum og við megum líka víxla á hliðum jöfnunnar, þ.e. \(A=B\) er jafngilt \(B=A\). Það er líka hægt að breyta táknunum, jöfnuhneppið \(x+y=S\) og \(x-y=M\) er jafngilt jöfnuhneppinu \(a+b=c\) og \(a-b=d\). En hér er aukaspurning: við vitum: ef \(x=y\) þá er líka \(x^2=y^2\). Samt er aðgerðin „að hefja báðar hliðar í annað veldi`` ekki samhverfa -- af hverju ekki?
+
+\section{Kennsluefni um jöfnur}\label{kennsluefni-jofnur}
+
+Í textanum gefur Lockhart dæmi þar sem nemendum er einfaldlega sagt: „hér er aðferðin, nú notið þið hana``. Dæmi á bls. 5 er eftirfarandi:
+
+\begin{quote}
+``The area of a triangle is equal to one-half its base times its height.'' Students are asked to memorize this formula and then ``apply'' it over and over in the ``exercises.'' Gone is the thrill, the joy, even the pain and frustration of the creative act. There is not even a problem anymore. The question has been asked and answered at the same time---there is nothing left for the student to do.
+\end{quote}
+
+\begin{exercise}[Samanburður kennsluefnis]
+\protect\hypertarget{exr:exr-verkefni-kennsluefni-lockhart}{}\label{exr:exr-verkefni-kennsluefni-lockhart}Skoðið eftirfarandi tvö inngangsverkefni um jöfnur og lausnir þeirra úr tveimur ólíkum kennslubókum (A og B). Berið nálganirnar saman. Er önnur þeirra í anda „hér er aðferðin, nú notið þið hana``? Er eitthvað að segja um breytileika (samhverfur) í annarri hvorri eða báðum?
+\end{exercise}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Stika_jafna} 
+
+}
+
+\caption{Verkefni A (Stika 3b)}\label{fig:fig-stika-jafna}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/Almenn_stae_jofnur} 
+
+}
+
+\caption{Verkefni B (Almenn stærðfræði I)}\label{fig:fig-almenn-stae-jofnur}
+\end{figure}
+
+\section{Regla Þalesar}\label{lockhart-thales}
+
+Regla Þalesar er undrunarefni (sjá kafla \ref{undrun}) eins og aðrar reglur í stærðfræði. Í grein Lockharts er fjallað um reglu Þalesar á blaðsíðum 20-22.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Thales-teikn} 
+
+}
+
+\caption{Þríhyrningur (Regla Þalesar)}\label{fig:fig-Thales-teikn}
+\end{figure}
+
+Hann gefur okkur mynd af þríhyrningi innan í hálfhring. Það er alls ekki ljóst að hornið sem myndast við punktinn á boganum sé rétt horn. Og ætti hornið ekki að breytast ef punkturinn færist?
+
+Hana má kynna á mismunandi vegu og hér verða gefnar nokkrar hugmyndir.
+
+\begin{exercise}[Regla Þalesar með pappír og blýanti]
+\protect\hypertarget{exr:exr-thales-pappir}{}\label{exr:exr-thales-pappir}Teiknið eða sjáið fyrir ykkur hálfhring. Hálfhring er hægt að búa til með því að gera fyrst hring og draga svo miðstreng, sem er strik gegnum miðju hringsins með báða endapunkta á hringferlinum. Teiknið svo eða sjáið fyrir ykkur punkt á boganum og strik frá þessum punkti að sínum hvorum endapunktum miðstrengsins. Hve stórt er hornið sem myndast milli þessara tveggja strika?
+\end{exercise}
+
+Á kviku myndinni hér fyrir neðan er hálfhringur (brotin ferill) og miðþverill hans milli tveggja punkta. Á myndinni er einnig frjáls punktur, \(C\), og mælitala hornsins sem myndast milli strikanna frá endapunktum miðstrengsins og \(C\). Hægt er að hreyfa punktinn \(C\) á skjánum.
+
+Spurningin er hvort hægt er að segja eitthvað um stærð hornsins ef C út frá því hvort punkturinn er fyrir utan, fyrir innan eða lendir nákvæmlega á hringboganum.
+
+Þegar við höfum velt þessu fyrir okkur og prófað og pælt er hægt að kynna reglu Þalesar: Segjum að ABC sé þríhyrningur þar sem AB er miðstrengur hrings. Ef C er á hringferlinum þá er C rétt horn. Og einnig gildir reglan í hina áttina: Ef C er rétt horn liggur C á hringferlinum. En stærðfræðin spyr: Hvers vegna? Hvernig vitum við að það er satt?
+
+Lockhart sýnir sönnun úr kennslubók. Svo er sýnd lausn nemanda í 7. bekk.
+
+\begin{exercise}[Regla Þalesar með kviku rúmfræðiforriti]
+\protect\hypertarget{exr:exr-thales-geogebra}{}\label{exr:exr-thales-geogebra}\leavevmode
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Setjið ykkur inn í báðar sannanirnar. Berið þær saman. Notar önnur hvor þeirra (eða báðar) samhverfu: eitthvað sem breytist ekki við einhverja aðgerð? Finnst ykkur önnur hvor fallegri, sniðugri, gagnlegri eða meira sannfærandi?
+\item
+  Skoðið umfjöllun um reglu Þalesar í Skala 2b, bls. 29-30. Hvernig kemur hún út í samanburði?
+\item
+  Hver er tilgangurinn með því að hafa þessa reglu í kennslubókinni, með hliðsjón af markmiðakafla aðalnámskrár, og með hliðsjón af stærðfræði sem „listinni að útskýra`` eða „ævintýri`` (hvoru tveggja nefnt hjá Lockhart) eða stærðfræði sem gagnlegu tæki, mikilvægu fyrir störf og efnahag?
+\end{enumerate}
+
+\end{exercise}
 
 \printbibliography
 
